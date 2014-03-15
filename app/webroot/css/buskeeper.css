@@ -1,0 +1,11 @@
+.none{
+	display: none;
+}
+
+.data-table{
+	font-weight: bold;
+	text-align: right !important;
+}
+.actions {
+	text-align: right;
+}
