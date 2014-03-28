@@ -98,8 +98,6 @@ class ViajesController extends AppController
 				exit('YES');
 			}			
 		}
-
 		throw new BadRequestException();
 	}
-
 }
