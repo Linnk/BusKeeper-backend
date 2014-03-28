@@ -198,6 +198,6 @@
 
 <p>La estructura de datos está basada en el framework de localización de iOS 6.1, por lo que si alguien desea generar los mismos datos desde otra plataforma (por ejemplo, Android) debe tener cuidado con la conversión de valores.</p>
 
-<p>El objecto JSON tiene que enviarse en $_POST['data'] (para integrarse con CakePHP) a la siguiente URL: http://dashboard.buskeeper.com/viajes/send_data/{Clave HMAC}</p>
+<p>El objecto JSON tiene que enviarse en $_POST['data'] (para integrarse con CakePHP) a la siguiente URL: http://buskeeper.com/api/submit/{Clave HMAC}</p>
 
 <p>La clave HMAC (Hash-based Message Authentication Code) se genera usando como semilla principal el string en RAW del mensaje JSON, la clave secreta y el algoritmo MD5.</p>

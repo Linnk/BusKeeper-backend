@@ -22,7 +22,7 @@
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 	Router::connect('/', array('controller' => 'home', 'action' => 'index'));
-	Router::connect('/submit', array('controller' => 'home', 'action' => 'submit'));
+	Router::connect('/submit/*', array('controller' => 'home', 'action' => 'submit'));
 /**
  * Here, we are connecting '/' (base path) to controller called 'Pages',
  * its action called 'display', and we pass a param to select the view file
