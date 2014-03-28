@@ -1,76 +1,62 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-	<?php echo $this->Html->charset(); ?>
-	<title><?php echo $title_for_layout; ?></title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	<link rel="shortcut icon" href="/ico/favicon.png">
-	<?php
-		echo $this->Html->css('bootstrap.min');
-		//echo $this->Html->css('bootstrap-theme.min');
-		echo $this->Html->css('buskeeper');
+<?php
+/**
+ *
+ * PHP 5
+ *
+ * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+ * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
+ *
+ * Licensed under The MIT License
+ * For full copyright and license information, please see the LICENSE.txt
+ * Redistributions of files must retain the above copyright notice.
+ *
+ * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
+ * @link          http://cakephp.org CakePHP(tm) Project
+ * @package       app.View.Layouts
+ * @since         CakePHP(tm) v 0.10.0.1076
+ * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
+ */
 
-		//echo $this->Html->script('jquery-1.10.2.min');
-		//echo $this->Html->script('bootstrap.min');
-		echo $this->Html->script('mootools-core-1.4.5-full-nocompat-yc');
+$cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework');
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<?php echo $this->Html->charset(); ?>
+	<title>
+		<?php echo $cakeDescription ?>:
+		<?php echo $title_for_layout; ?>
+	</title>
+	<?php
+		echo $this->Html->meta('icon');
+
+		echo $this->Html->css('cake.generic');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
 	?>
-    <meta name="description" content="Dashboard the BusKeeper" />
-    <meta name="author" content="BusKeeper">
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
+		</div>
+		<div id="content">
 
-    <style>
-      body {
-        padding-top: 70px; /* 60px to make the container go all the way to the bottom of the topbar */
-      }
-    </style>
+			<?php echo $this->Session->flash(); ?>
 
-  </head>
-
-  <body>
-
-    <!-- Fixed navbar -->
-    <div class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/">BusKeeper</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="/viajes">Viajes</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
-
-    <div class="container">
-
-    	<?php echo $this->element('breadcrumb'); ?>
-
-		<?php echo $this->Session->flash(); ?>
-
-		<?php echo $this->fetch('content'); ?>
-
-    </div> <!-- /container -->
-
-	<div class="container">	
-		<hr />
-		<footer>
-			<span class="text-muted pull-right">
-				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" title="BusKeeper data is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License."><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png" /></a>
-			</span>
-			<p class="text-muted">&copy; BusKeeper 2013 — Desarrollado por @<a href="https://twitter.com/Linnk" target="_blank" title="Juan I. Benavides">Linnk</a>, @<a href="https://twitter.com/Bogue89" target="_blank" title="Jorge A. Benavides">Bogue89</a> y @<a href="https://twitter.com/CarlosImarch" target="_blank" title="Carlos Garza">CarlosImarch</a> en colaboración con @<a href="https://twitter.com/ZapopanLab" target="_blank" title="ZapopanLab">ZapopanLab</a> y <a href="http://plataformametropolitana.org/" target="_blank" title="Plataforma Metropolitana para la Sustentabilidad">Plataforma Metropolitana</a></p>
-		</footer>
+			<?php echo $this->fetch('content'); ?>
+		</div>
+		<div id="footer">
+			<?php echo $this->Html->link(
+					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
+					'http://www.cakephp.org/',
+					array('target' => '_blank', 'escape' => false)
+				);
+			?>
+		</div>
 	</div>
-
 	<?php echo $this->element('sql_dump'); ?>
-
-  </body>
+</body>
 </html>

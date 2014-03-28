@@ -1,11 +1,131 @@
-.none{
-	display: none;
+.buskeeper{
+	background-image: url('../img/static-background-dark.jpg');
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-color: #7fb1fa;
+	background-size: cover;
+	padding: 30px 0 40px 0;
+	color: #fff;
+	overflow: hidden;
+	text-shadow: 0px 1px 3px #404040;
+	text-shadow: 0px 1px 3px #000;
+	position: relative;
+}
+.buskeeper .container .col-sm-4{
+	z-index:11;
+}
+.buskeeper .container .col-md-6{
+	/*background-image: url('../img/opacity-40-percent.png');*/
+	background-position: center top;
+	background-repeat: repeat;
+	background-color: transparent;
+	z-index:10;
+	border-radius: 10px;
+}
+.buskeeper:hover .container .col-md-6{
+	/*background-image: url('../img/opacity-80-percent.png');*/
+}
+.buskeeper .big-icon{
+	float: left;
+	margin-top: 15px;
+	margin-right: 20px;
+	width: 100px
+}
+.buskeeper .iphone-container{
+	position: relative;
+}
+.buskeeper .iphone5{
+	position: absolute;
+	top: 0px;
+	left: 60px;
+}
+.buskeeper h4{
+
+}
+#dark{
+	position: absolute;
+	top:0%;
+	left:0%;
+	height:100%;
+	width:100%;
+	overflow: hidden;
+	background-image: url('../img/opacity-80-percent.png');
+	background-position: center top;
+	background-repeat: repeat;
+	background-color: transparent;
+	z-index:5;
+	opacity: 0.4;
+	transition: opacity 0.5s linear 0s;
+	-webkit-transition: opacity 0.5s linear 0s;
+}
+.buskeeper:hover #dark{
+	opacity: 1.0;
+}
+#video-container {
+	position: absolute;
+	top:0%;
+	left:0%;
+	height:100%;
+	width:100%;
+	overflow: hidden;
+}
+#video-container video {
+	position:absolute;
+	z-index:0;
+	width: 100%;
+}
+.shadow-top{
+	background-image: url('../img/soft-shadow.png');
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-color: transparent;
 }
 
-.data-table{
-	font-weight: bold;
-	text-align: right !important;
+.body p, .body h2{
+	color: #5a5a5a;
 }
-.actions {
-	text-align: right;
+.body blockquote{
+	border: 0;
+	text-align: center;
+	margin-top: 30px;
+}
+.body blockquote p{
+	font-size: 30px;
+	font-weight: lighter;
+	font-style: normal;
+	font-family: Helvetica;
+}
+.body h2{
+	font-weight: lighter;
+	margin-bottom: 25px;
+}
+.body .info p{
+	color: #999;
+}
+.steps{
+	background-color: transparent;
+	border-radius: 10px;
+	padding: 10px 40px 1px 40px;
+	margin: 0 0 0 3px;
+	opacity: 1;
+}
+
+.steps li{
+	margin-bottom: 20px;
+}
+footer{
+	margin-bottom: 20px;
+}
+
+@media (min-width: 768px)
+{
+	.iphone-container{
+		display: none;
+	}
+}
+@media (max-width: 1080px)
+{
+	#video-container{
+		display: none;
+	}
 }

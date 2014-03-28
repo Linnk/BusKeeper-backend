@@ -1,0 +1,904 @@
+2013-05-05 07:58:48 Error: [MissingControllerException] Controller class Apple-touch-icon-precomposed.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon-precomposed.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon-precomposed.png
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-05 07:58:48 Error: [MissingControllerException] Controller class Apple-touch-icon.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon.png
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-05 08:23:16 Error: [MissingControllerException] Controller class ViajesController could not be found.
+Exception Attributes: array (
+  'class' => 'ViajesController',
+  'plugin' => NULL,
+)
+Request URL: /viajes
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-05 08:49:36 Error: [MissingHelperException] Helper class ScaffoldHelper could not be found.
+Exception Attributes: array (
+  'class' => 'ScaffoldHelper',
+  'plugin' => false,
+)
+Request URL: /viajes
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/buskeeper.dev/lib/Cake/View/View.php(884): HelperCollection->load('Scaffold', Array)
+#1 /Users/linnk/Code/Linnk/buskeeper.dev/lib/Cake/View/View.php(464): View->loadHelpers()
+#2 /Users/linnk/Code/Linnk/buskeeper.dev/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#3 /Users/linnk/Code/Linnk/buskeeper.dev/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#4 /Users/linnk/Code/Linnk/buskeeper.dev/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ViajesController), Object(CakeRequest), Object(CakeResponse))
+#5 /Users/linnk/Code/Linnk/buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-05-05 08:49:54 Error: [MissingViewException] View file "/Users/linnk/Code/Linnk/buskeeper.dev/app/View/Viajes/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/linnk/Code/Linnk/buskeeper.dev/app/View/Viajes/index.ctp',
+)
+Request URL: /viajes
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/buskeeper.dev/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/linnk/Code/Linnk/buskeeper.dev/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/linnk/Code/Linnk/buskeeper.dev/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/linnk/Code/Linnk/buskeeper.dev/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ViajesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/linnk/Code/Linnk/buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-05-05 08:51:07 Error: [MissingViewException] View file "/Users/linnk/Code/Linnk/buskeeper.dev/app/View/Viajes/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/linnk/Code/Linnk/buskeeper.dev/app/View/Viajes/index.ctp',
+)
+Request URL: /viajes
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/buskeeper.dev/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/linnk/Code/Linnk/buskeeper.dev/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/linnk/Code/Linnk/buskeeper.dev/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/linnk/Code/Linnk/buskeeper.dev/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ViajesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/linnk/Code/Linnk/buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-05-05 08:51:25 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/scaffold.index.js
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-05 08:52:19 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/scaffold.index.js
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-05 08:52:30 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/scaffold.index.js
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-05 08:53:06 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/scaffold.index.js
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 11:08:18 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /favicon.ico
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 13:50:14 Error: [MissingViewException] View file "/Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/View/Viajes/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/View/Viajes/index.ctp',
+)
+Request URL: /viajes
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ViajesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-02 13:50:22 Error: [MissingViewException] View file "/Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/View/Viajes/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/View/Viajes/index.ctp',
+)
+Request URL: /viajes
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ViajesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-02 13:50:41 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/scaffold.index.js
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:00:05 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/scaffold.index.js
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:10:23 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/scaffold.index.js
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:15:28 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/scaffold.index.js
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:15:31 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/scaffold.index.js
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:19:36 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/scaffold.index.js
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:19:36 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.theme.min.css
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:19:39 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.theme.min.css
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:19:49 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:21:11 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.theme.min.css
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:21:11 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:21:26 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:21:58 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:23:26 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:24:10 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:24:19 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:26:41 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:26:55 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:26:57 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/scaffold.index.js
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:26:57 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:27:37 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/scaffold.index.js
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:27:38 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:28:00 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/scaffold.index.js
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:28:01 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:29:19 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:29:39 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/scaffold.index.js
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:29:39 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:29:42 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:29:46 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/scaffold.index.js
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:29:47 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:29:49 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:30:58 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/scaffold.index.js
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:30:59 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:31:14 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/scaffold.index.js
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:31:15 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:31:28 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/scaffold.index.js
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:31:29 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:31:39 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/scaffold.index.js
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:31:39 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:32:17 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/scaffold.index.js
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:32:18 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:35:59 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:36:21 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:51:47 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/scaffold.index.js
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:51:47 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:51:49 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/scaffold.index.js
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:51:49 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:52:28 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:53:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:54:32 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:54:37 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 14:59:26 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 15:02:06 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 15:04:01 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 15:04:24 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 15:05:16 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 15:07:22 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 15:07:58 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 15:09:10 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 15:10:00 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 15:10:46 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 15:11:03 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 15:14:19 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 15:16:14 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 15:17:41 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 15:18:28 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 15:18:36 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 15:18:47 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 15:19:14 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 15:19:40 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 15:20:16 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 15:20:29 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 15:20:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 15:21:14 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 15:21:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 15:21:41 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 15:23:30 Error: [MissingControllerException] Controller class DashboardController could not be found.
+Exception Attributes: array (
+  'class' => 'DashboardController',
+  'plugin' => NULL,
+)
+Request URL: /dashboard
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 15:23:32 Error: [MissingControllerException] Controller class DashboardController could not be found.
+Exception Attributes: array (
+  'class' => 'DashboardController',
+  'plugin' => NULL,
+)
+Request URL: /dashboard
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 15:24:47 Error: [MissingControllerException] Controller class DashboardController could not be found.
+Exception Attributes: array (
+  'class' => 'DashboardController',
+  'plugin' => NULL,
+)
+Request URL: /dashboard
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-02 15:25:01 Error: [MissingControllerException] Controller class DashboardController could not be found.
+Exception Attributes: array (
+  'class' => 'DashboardController',
+  'plugin' => NULL,
+)
+Request URL: /dashboard
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-16 18:08:34 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /favicon.ico
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-16 18:20:29 Error: [MissingActionException] Action ViajesController::hmac() could not be found.
+Exception Attributes: array (
+  'controller' => 'ViajesController',
+  'action' => 'hmac',
+)
+Request URL: /viajes/hmac
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ViajesController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-27 23:36:36 Error: [MissingTableException] Table viajes for model Viaje was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'viajes',
+  'class' => 'Viaje',
+  'ds' => 'default',
+)
+Request URL: /viajes
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/lib/Cake/Model/Model.php(3243): Model->setSource('viajes')
+#1 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/lib/Cake/Model/Model.php(1319): Model->getDataSource()
+#2 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/lib/Cake/Model/Model.php(1402): Model->schema()
+#3 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/lib/Cake/Controller/Component/PaginatorComponent.php(388): Model->hasField('start_date')
+#4 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/lib/Cake/Controller/Component/PaginatorComponent.php(142): PaginatorComponent->validateSort(Object(Viaje), Array, Array)
+#5 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/lib/Cake/Controller/Controller.php(1074): PaginatorComponent->paginate('Viaje', Array, Array)
+#6 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/Controller/ViajesController.php(12): Controller->paginate('Viaje')
+#7 [internal function]: ViajesController->index()
+#8 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ViajesController), Array)
+#9 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ViajesController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-11-27 23:36:36 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /favicon.ico
+Stack Trace:
+#0 /Users/linnk/Code/Linnk/dashboard.buskeeper.dev/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
