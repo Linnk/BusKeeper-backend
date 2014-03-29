@@ -40,9 +40,10 @@ class Viaje extends AppModel
 				$source = 'Android';
 			elseif(hash_hmac("md5", $data_message, SECRET_KEY_THIRD_PARTY) == base64_decode($auth))
 				$source = 'Third Party';
-			
-			if(is_null($source))
-				exit('Hold your horses! '.$hash_hmac.' != '.base64_decode($auth));
+			elseif(hash_hmac("md5", $data_message, SECRET_KEY_DEV) == base64_decode($auth))
+				you_re_doddamn_right();
+			else
+				exit('Hold your horses, cowboy.');
 		}
 		else
 		{
