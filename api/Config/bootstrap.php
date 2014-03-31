@@ -116,9 +116,10 @@ define('SECRET_KEY_DEV', '70a6e085e1257202bc33d0cc43b355c64f68');
 /**
  * Heisenberg
  */
-public function you_re_doddamn_right()
+function bad_hash()
 {
 	$messages = array(
+		'Hold your horses, cowboy.',
 		'You\'re goddamn right.',
 		'Yippie kay yay, motherfucker.',
 		'Yeah bitch, magnets.',
