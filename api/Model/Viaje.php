@@ -43,7 +43,7 @@ class Viaje extends AppModel
 			elseif(hash_hmac("md5", $data_message, SECRET_KEY_DEV) == base64_decode($auth))
 				exit('YES');
 			else
-				bad_hash();
+				exit('Hold your horses, cowboy.');
 		}
 		else
 		{

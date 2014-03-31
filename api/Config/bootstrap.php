@@ -112,19 +112,3 @@ CakeLog::config('error', array(
  * Testing & Debbuging
  */
 define('SECRET_KEY_DEV', '70a6e085e1257202bc33d0cc43b355c64f68');
-
-/**
- * Heisenberg
- */
-function bad_hash()
-{
-	$messages = array(
-		'Hold your horses, cowboy.',
-		'You\'re goddamn right.',
-		'Yippie kay yay, motherfucker.',
-		'Yeah bitch, magnets.',
-		'Here\'s Johnny.',
-	);
-	$message = array_rand($messages, 1);
-	exit($message[0]);
-}
