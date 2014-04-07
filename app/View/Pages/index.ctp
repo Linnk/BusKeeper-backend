@@ -23,13 +23,13 @@
 
 	<div class="buskeeper">
 		<div id="video-container">
-		<div class="lionplayer">
-			<video autoplay loop>
-				<source src="/video/bus-experience-1.mp4" type="video/mp4">
-				<source src="/video/bus-experience-1.webm" type="video/webm">
-				Tu navegador no soporta video HTML5.
-			</video>
-		</div>
+			<div class="lionplayer">
+				<video autoplay loop>
+					<source src="/video/bus-experience-1.mp4" type="video/mp4">
+					<source src="/video/bus-experience-1.webm" type="video/webm">
+					Tu navegador no soporta video HTML5.
+				</video>
+			</div>
 		</div>
 		<div id="dark">
 		</div>
