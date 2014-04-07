@@ -11,9 +11,11 @@
 
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/lionplayer.css" rel="stylesheet">
     <link href="/css/buskeeper.css" rel="stylesheet">
     
     <script src="/js/mootools-core-1.4.5-full-nocompat-yc.js"></script>
+    <script src="/js/lionplayer.js"></script>
     <script src="/js/buskeeper.js"></script>
   </head>
 
@@ -21,11 +23,13 @@
 
 	<div class="buskeeper">
 		<div id="video-container">
+		<div class="lionplayer">
 			<video autoplay loop>
 				<source src="/video/bus-experience-1.mp4" type="video/mp4">
 				<source src="/video/bus-experience-1.webm" type="video/webm">
 				Tu navegador no soporta video HTML5.
 			</video>
+		</div>
 		</div>
 		<div id="dark">
 		</div>

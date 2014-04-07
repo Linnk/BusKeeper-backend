@@ -28,5 +28,8 @@ window.addEvent('domready', function(){
 			});
 		}).delay(3000);		
 	}
-
+	
+	$$('.lionplayer').each(function(player,i){
+		lionPlayer = new LionPlayer(player);
+	});
 });
