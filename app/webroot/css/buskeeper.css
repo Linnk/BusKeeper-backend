@@ -55,10 +55,10 @@
 	background-color: transparent;
 	z-index:5;
 	opacity: 0.4;
-	transition: opacity 0.5s linear 0s;
-	-webkit-transition: opacity 0.5s linear 0s;
+	/*transition: opacity 0.5s linear 0s;*/
+	/*-webkit-transition: opacity 0.5s linear 0s;*/
 }
-.buskeeper:hover #dark{
+disabled.buskeeper:hover #dark{
 	opacity: 1.0;
 }
 #video-container {
