@@ -36,11 +36,11 @@ class Viaje extends AppModel
 		{
 			if(hash_hmac("md5", $data_message, SECRET_KEY_IPHONE) == base64_decode($auth))
 				$source = 'iPhone';
-			elseif(hash_hmac("md5", $data_message, SECRET_KEY_ANDROID) == base64_decode($auth))
+			elseif(hash_hmac("md5", $data_message, SECRET_KEY_ANDROID) == $auth)
 				$source = 'Android';
-			elseif(hash_hmac("md5", $data_message, SECRET_KEY_THIRD_PARTY) == base64_decode($auth))
+			elseif(hash_hmac("md5", $data_message, SECRET_KEY_THIRD_PARTY) == $auth)
 				$source = 'Third Party';
-			elseif(hash_hmac("md5", $data_message, SECRET_KEY_DEV) == base64_decode($auth))
+			elseif(hash_hmac("md5", $data_message, SECRET_KEY_DEV) == $auth)
 				exit('YES');
 			else
 				exit('Hold your horses, cowboy.');
