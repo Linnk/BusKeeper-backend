@@ -46,7 +46,10 @@
 					</ol>
 					<br />
 					<br />
-					<p><a href="https://itunes.apple.com/mx/app/buskeeper-evalua-transporte/id691109375?mt=8&uo=4" target="itunes_store"style="display:inline-block;overflow:hidden;background:url(http://linkmaker.itunes.apple.com/htmlResources/assets/es_mx//images/web/linkmaker/badge_appstore-lrg.png) no-repeat;width:135px;height:40px;@media only screen{background-image:url(http://linkmaker.itunes.apple.com/htmlResources/assets/es_mx//images/web/linkmaker/badge_appstore-lrg.svg);}"></a></p>
+					<p>
+						<a href="https://itunes.apple.com/mx/app/buskeeper-evalua-transporte/id691109375?mt=8&uo=4" target="itunes_store"style="display:inline-block;overflow:hidden;background:url(http://linkmaker.itunes.apple.com/htmlResources/assets/es_mx//images/web/linkmaker/badge_appstore-lrg.png) no-repeat;width:135px;height:40px;@media only screen{background-image:url(http://linkmaker.itunes.apple.com/htmlResources/assets/es_mx//images/web/linkmaker/badge_appstore-lrg.svg);}"></a>
+						<a href="http://play.google.com/store/apps/details?id=com.lionwriter.buskeeper" style="margin-left:10px; width:125px; height:40px; display:inline-block; background:transparent center center url(http://developer.android.com/images/brand/en_app_rgb_wo_45.png) no-repeat; background-size:100% 100%;"></a>
+					</p>
 				</div>
 				<div class="col-md-2"></div>
 			</div>
