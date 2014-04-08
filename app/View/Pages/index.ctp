@@ -23,20 +23,24 @@
 
 	<div class="buskeeper">
 		<div id="video-container">
-		<div class="lionplayer">
-			<video autoplay loop>
-				<source src="/video/bus-experience-1.mp4" type="video/mp4">
-				<source src="/video/bus-experience-1.webm" type="video/webm">
-				Tu navegador no soporta video HTML5.
-			</video>
-		</div>
+			<div class="lionplayer">
+				<video autoplay loop>
+					<source src="/video/bus-experience-1.mp4" type="video/mp4">
+					<source src="/video/bus-experience-1.webm" type="video/webm">
+					Tu navegador no soporta video HTML5.
+				</video>
+			</div>
 		</div>
 		<div id="dark">
 		</div>
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-4" class="iphone-container">
-					<a href="https://itunes.apple.com/mx/app/buskeeper-evalua-transporte/id691109375?mt=8&uo=4" target="itunes_store" class="hidden-xs hidden-sm"><img src="/img/iphone-5-screen-1.png" id="Screen1" class="iphone5" border="0" alt="iPhone5" /><img src="/img/iphone-5-screen-2.png" id="Screen2" class="iphone5" border="0" alt="iPhone5" /><img src="/img/iphone-5-screen-3.png" id="Screen3" class="iphone5" border="0" alt="iPhone5" /></a>
+					<a href="https://itunes.apple.com/mx/app/buskeeper-evalua-transporte/id691109375?mt=8&uo=4" target="itunes_store" class="hidden-xs hidden-sm">
+						<img src="/img/iphone-5-screen-1.png" id="Screen1" class="iphone5" border="0" alt="iPhone5" />
+						<img src="/img/iphone-5-screen-2.png" id="Screen2" class="iphone5" border="0" alt="iPhone5" />
+						<img src="/img/iphone-5-screen-3.png" id="Screen3" class="iphone5" border="0" alt="iPhone5" />
+					</a>
 				</div>
 				<div class="col-md-6">
 					<img src="/img/buskeeper-icon.png" border="0" class="big-icon"  />

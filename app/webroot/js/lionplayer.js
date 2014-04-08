@@ -141,7 +141,7 @@ function LionPlayer(domelement) {
 		LionPlayer.progressLabel.innerHTML = hrs > 0 ? hrs+":"+min+":"+seg : (min<10 ? "0"+min:min)+":"+(seg<10 ? "0"+seg:seg);
 		LionPlayer.progressBar.style.width = (LionPlayer.htmlPlayer.currentTime/LionPlayer.htmlPlayer.duration *100)+"%";
 	});
-	document.addEventListener("contextmenu", stopPropagation, false);
+
 	
 	document.addEventListener("fullscreenchange", function () {
 	    LionPlayer.exitFullscreen()
@@ -160,8 +160,6 @@ function LionPlayer(domelement) {
 	this.htmlPlayer.removeAttribute("controls");
 	// Remove the HTML5 poster
 	this.htmlPlayer.removeAttribute("poster");
-	
-	console.log("new: "+this.type);
 	
 	return this;
 }

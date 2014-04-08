@@ -37,7 +37,8 @@
 .buskeeper .iphone5{
 	position: absolute;
 	top: 0px;
-	left: 60px;
+	left: 40px;
+	max-width: 280px;
 }
 .buskeeper h4{
 
@@ -54,7 +55,7 @@
 	background-repeat: repeat;
 	background-color: transparent;
 	z-index:5;
-	opacity: 0.4;
+	opacity: 0.3;
 	/*transition: opacity 0.5s linear 0s;*/
 	/*-webkit-transition: opacity 0.5s linear 0s;*/
 }
