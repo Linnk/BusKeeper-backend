@@ -1,0 +1,25 @@
+{
+    "Dashboard": {
+        "controller": "Dashboard",
+        "actions": {
+            "index": {
+                "label": "Dashboard",
+                "navbar": 1
+            },
+            "book": [],
+            "settings": {
+                "label": "Settings",
+                "navbar": 1
+            }
+        }
+    },
+    "Users": {
+        "controller": "Users",
+        "actions": {
+            "index": {
+                "label": "Users"
+            },
+            "*": []
+        }
+    }
+}

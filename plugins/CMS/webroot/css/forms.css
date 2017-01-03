@@ -1,0 +1,33 @@
+form img, form video {
+	max-width: 100%;
+}
+.date-widget .date,
+.date-widget .time {
+	margin-bottom: 5px;
+}
+.date-widget .date:after,
+.date-widget .time:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.date-widget .date .c-select,
+.date-widget .time .c-select {
+	display: inline-block;
+}
+.date-widget .c-select.year {
+	width: 5rem;
+}
+.date-widget .c-select.month {
+	width: 7.5rem;
+}
+.date-widget .c-select.day,
+.date-widget .c-select.hour,
+.date-widget .c-select.minute,
+.date-widget .c-select.sencod {
+	width: 3.8rem;
+}
+.date-widget .date .fa,
+.date-widget .time .fa {
+	margin: 5px 15px;
+}

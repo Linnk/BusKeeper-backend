@@ -1,0 +1,114 @@
+{
+    "Dashboard": {
+        "controller": "Dashboard",
+        "actions": {
+            "index": {
+                "label": "Dashboard",
+                "navbar": 1
+            },
+            "book": [],
+            "settings": {
+                "label": "Settings",
+                "navbar": 1
+            }
+        }
+    },
+    "Students": {
+        "controller": "Students",
+        "actions": {
+            "index": {
+                "label": "Students",
+                "navbar": 1,
+                "dropdown": "Samsa"
+            },
+            "add": [],
+            "edit": []
+        }
+    },
+    "Classes": {
+        "controller": "Classes",
+        "actions": {
+            "index": {
+                "label": "Classes",
+                "navbar": 1,
+                "dropdown": "Samsa"
+            },
+            "*": []
+        }
+    },
+    "Lessons": {
+        "controller": "Lessons",
+        "actions": {
+            "index": {
+                "label": "Lessons",
+                "navbar": 1,
+                "dropdown": "Samsa"
+            },
+            "*": []
+        }
+    },
+    "Products": {
+        "controller": "Products",
+        "actions": {
+            "index": {
+                "label": "Products",
+                "navbar": 1,
+                "dropdown": "Samsa"
+            },
+            "*": []
+        }
+    },
+    "Instructors": {
+        "controller": "Instructors",
+        "actions": {
+            "index": {
+                "label": "Instructors",
+                "navbar": 1,
+                "dropdown": "Samsa"
+            },
+            "*": []
+        }
+    },
+    "Services": {
+        "controller": "Services",
+        "actions": {
+            "index": {
+                "label": "Services",
+                "navbar": 1,
+                "dropdown": "Samsa"
+            },
+            "*": []
+        }
+    },
+    "Promos": {
+        "controller": "Promos",
+        "actions": {
+            "index": {
+                "label": "Promos",
+                "navbar": 1,
+                "dropdown": "Samsa"
+            },
+            "*": []
+        }
+    },
+    "Posts": {
+        "controller": "Posts",
+        "actions": {
+            "index": {
+                "label": "Posts",
+                "navbar": 1,
+                "dropdown": "Samsa"
+            },
+            "*": []
+        }
+    },
+    "Users": {
+        "controller": "Users",
+        "actions": {
+            "index": {
+                "label": "Users"
+            },
+            "*": []
+        }
+    }
+}

@@ -1,9 +1,9 @@
 .DS_Store
-app/tmp/
-app/Config/database.php
-app/Config/core.php
-app/Config/email.php
-app/webroot/files/
+api/old/tmp/
+api/old/Config/database.php
+api/old/Config/core.php
+api/old/Config/email.php
+api/old/webroot/files/
 
 api/tmp/
 api/Config/database.php
@@ -11,6 +11,35 @@ api/Config/core.php
 api/Config/email.php
 api/webroot/files/
 
-lib/Cake/Console/Templates/skel/tmp/cache/persistent/myapp_cake_core_cake_console_
+api/lib/Cake/Console/Templates/skel/tmp/cache/persistent/myapp_cake_core_cake_console_
 error_log
-app/webroot/error_log
+api/old/webroot/error_log
+
+# User specific & automatically generated files #
+#################################################
+/config/app.php
+/tmp/*
+/logs/*
+/webroot/files/*
+/dev-resources/private/*
+
+!/tmp/empty
+!/logs/empty
+!/webroot/files/empty
+!/webroot/files/settings
+# IDE and editor specific files #
+#################################
+/nbproject
+.idea
+*.tar.gz
+*.zip
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db

@@ -1,0 +1,44 @@
+.navbar {
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.34);
+	border-radius: 0;
+	z-index: 1;
+}
+.navbar.navbar-fixed-top {
+	z-index: 1030;
+}
+.navbar.navbar-fixed-top + .container {
+
+}
+.navbar-brand, .navbar-brand > img {
+	display: inline-block;
+}
+.navbar.bg-clear {
+	background: none;
+	box-shadow: none;
+}
+.navbar-left-side {
+	position: fixed;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	z-index: 1020;
+}
+.navbar-left-side {
+	display: none;
+}
+.navbar-left-side.opening,
+.navbar-left-side.open {
+	display: inherit;
+}
+.navbar-left-side .nav {
+	margin: 4rem 1.5rem;
+}
+.navbar-left-side .nav-item,
+.navbar-left-side .nav-item+.nav-item {
+	margin: 1rem;
+}
+.navbar-left-side .nav .nav-item {
+	display: block;
+	float: none;
+}
