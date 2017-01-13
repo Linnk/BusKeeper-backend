@@ -62,11 +62,4 @@ class PagesController extends AppController
             throw new NotFoundException();
         }
     }
-	public function beforeFilter(\Cake\Event\Event $event) {
-		parent::beforeFilter($event);
-		$this->Auth->allow();
-	}
-	public function isAuthorized($user = null) {
-		return true;
-	}
 }

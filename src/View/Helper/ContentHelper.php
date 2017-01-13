@@ -152,6 +152,27 @@ class ContentHelper extends Helper {
 
         return $dates_array[$closest];
 	}
+	public function metas($metas, $user_agent = null) {	
+		$html = "\n";
+		$prefix = null;
+		if(preg_match('/facebook/i', $user_agent)) {
+			$prefix = "og:";
+		}
+		if(preg_match('/twitter|Tweet/i', $user_agent)) {
+			$prefix = "twitter:";
+			$html = "<meta property=\"twitter:card\" name=\"twitter:card\" content=\"summary\" />\n";
+		}
+		if(preg_match('/google/i', $user_agent)) {
+			$prefix = "itemprop:";
+		}
+		foreach($metas as $name => $value) {
+			$html .= "<meta property=\"$name\" name=\"$name\" content=\"$value\"/>\n";
+			if($prefix)
+				$html .= "<meta property=\"$prefix$name\" name=\"$prefix$name\" content=\"$value\"/>\n";
+			
+		}
+		return $html;
+	}
 	public function setStyles($object, $includeAttribute = true) {
 		$styles = "";
 		foreach($object as $pro => $val) {

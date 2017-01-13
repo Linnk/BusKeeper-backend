@@ -48,6 +48,8 @@ class ComposerStaticInit38f9120aec62d565654631a9e213ef13
         ),
         'C' => 
         array (
+            'ContactManager\\Test\\' => 20,
+            'ContactManager\\' => 15,
             'Cake\\Test\\' => 10,
             'Cake\\Composer\\' => 14,
             'Cake\\Chronos\\' => 13,
@@ -64,6 +66,8 @@ class ComposerStaticInit38f9120aec62d565654631a9e213ef13
             'Aura\\Intl\\_Config\\' => 18,
             'App\\Test\\' => 9,
             'App\\' => 4,
+            'Api\\Test\\' => 9,
+            'Api\\' => 4,
         ),
     );
 
@@ -120,6 +124,14 @@ class ComposerStaticInit38f9120aec62d565654631a9e213ef13
         array (
             0 => __DIR__ . '/..' . '/cakephp/debug_kit/src',
         ),
+        'ContactManager\\Test\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/plugins/ContactManager/tests',
+        ),
+        'ContactManager\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/plugins/ContactManager/src',
+        ),
         'Cake\\Test\\' => 
         array (
             0 => __DIR__ . '/..' . '/cakephp/cakephp/tests',
@@ -159,6 +171,14 @@ class ComposerStaticInit38f9120aec62d565654631a9e213ef13
         'App\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
+        ),
+        'Api\\Test\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/plugins/Api/tests',
+        ),
+        'Api\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/plugins/Api/src',
         ),
     );
 

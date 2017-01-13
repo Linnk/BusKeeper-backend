@@ -15,10 +15,10 @@
  
 use Cake\Routing\Router;
 
-$website_title = h($settings['website_name']);
-$website_description = h($settings['website_description']);
-$website_keywords = h($settings['website_keywords']);
-$website_favicon = Router::url($settings['website_favicon'], true);
+$website_title = h($this->Settings->get('website_name'));
+$website_description = h($this->Settings->get('website_description'));
+$website_keywords = h($this->Settings->get('website_keywords'));
+$website_favicon = Router::url($this->Settings->get('website_favicon'), true);
 
 ?>
 <!DOCTYPE html>

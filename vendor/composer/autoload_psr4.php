@@ -19,6 +19,8 @@ return array(
     'Migrations\\' => array($vendorDir . '/cakephp/migrations/src'),
     'DebugKit\\Test\\Fixture\\' => array($vendorDir . '/cakephp/debug_kit/tests/Fixture'),
     'DebugKit\\' => array($vendorDir . '/cakephp/debug_kit/src'),
+    'ContactManager\\Test\\' => array($baseDir . '/plugins/ContactManager/tests'),
+    'ContactManager\\' => array($baseDir . '/plugins/ContactManager/src'),
     'Cake\\Test\\' => array($vendorDir . '/cakephp/cakephp/tests'),
     'Cake\\Composer\\' => array($vendorDir . '/cakephp/plugin-installer/src'),
     'Cake\\Chronos\\' => array($vendorDir . '/cakephp/chronos/src'),
@@ -29,4 +31,6 @@ return array(
     'Aura\\Intl\\_Config\\' => array($vendorDir . '/aura/intl/config'),
     'App\\Test\\' => array($baseDir . '/tests'),
     'App\\' => array($baseDir . '/src'),
+    'Api\\Test\\' => array($baseDir . '/plugins/Api/tests'),
+    'Api\\' => array($baseDir . '/plugins/Api/src'),
 );

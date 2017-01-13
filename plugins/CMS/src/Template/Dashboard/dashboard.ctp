@@ -86,8 +86,9 @@ echo $this->BForm->create(null, ['type' => 'file']);
 				'cancel-text' => 'Cancelar',
 				'label' => 'Es la imagen que aparece al principio del sitio web en caso de no haber video. Se recomienda subir imágenes de al menos 1,600 x 900 px'
 			]) ?>
-			<hr>
-			<span class="display-6">Imagen Centro</span>
+		</div>
+		<div class="col-sm-6">
+			<span class="display-6">Logo buskeeper</span>
 			<?php echo $this->BForm->input('website_front_logo',[
 				'value' => $this->Settings->get('website_front_logo'),
 				'input' => 'image',
@@ -97,8 +98,17 @@ echo $this->BForm->create(null, ['type' => 'file']);
 				'cancel-text' => 'Cancelar',
 				'label' => 'Es la imagen que aparece al centro. Se recomienda subir imágenes de al menos 600 x 300 px'
 			]) ?>
-		</div>
-		<div class="col-sm-6">
+			<hr>
+			<span class="display-6">Logo buskeeper invertido</span>
+			<?php echo $this->BForm->input('website_blue_logo',[
+				'value' => $this->Settings->get('website_blue_logo'),
+				'input' => 'image',
+				'add-text' => 'Subir una foto',
+				'remove-text' => 'Remover imagen',
+				'change-text' => 'Subir una foto nueva',
+				'cancel-text' => 'Cancelar',
+				'label' => 'Es la imagen que aparece al centro. Se recomienda subir imágenes de al menos 600 x 300 px'
+			]) ?>
 		</div>
 	</div>
 </div>

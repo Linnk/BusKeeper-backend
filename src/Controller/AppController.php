@@ -46,35 +46,6 @@ class AppController extends Controller
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
         $this->loadComponent('Cookie');
-        $this->loadComponent('Auth', [	        
-            'authorize' => ['Controller'],
-            'loginAction' => [
-            	'controller' => 'Auth',
-            	'action' => 'login'
-            ],
-            'authError' => 'You need to login first',
-            'authenticate' => [
-	            'Form' => [
-		            'userModel' => 'Users',
-	                'fields' => [
-	                	'username' => 'email',
-	                	'password' => 'password'
-	                ],
-	                'scope' => ['active' => 1]
-	            ]
-	        ],
-	        'flash' => [
-		        'element' => 'danger',
-		        'key' => 'auth_user',
-		        'params' => [
-		            'class' => 'danger'
-		        ]
-		    ],
-		    'storage' => [
-		    	'className' => 'Session',
-		    	'key' => 'Auth.User'
-		    ]
-        ]);
     }
 	public function beforeFilter(Event $event)
     {
@@ -94,11 +65,5 @@ class AppController extends Controller
         ) {
             $this->set('_serialize', true);
         }
-        if($user_id = $this->Auth->user('id')) {
-	        $this->set('Auth', $this->Users->find()->where(['id' => $this->Auth->user('id')])->first()->toArray());
-        } else {
-	        $this->set('Auth', null);
-        }
-        
     }
 }

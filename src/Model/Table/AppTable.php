@@ -3,8 +3,6 @@
 namespace App\Model\Table;
 
 use Cake\ORM\Table;
-use Cake\ORM\Entity;
-use Cake\Event\Event;
 
 class AppTable extends Table
 {
@@ -17,7 +15,7 @@ class AppTable extends Table
     {
 	    parent::initialize($config);
 		$this->table($this->tablePrefix.$this->table());
-
+		
 		foreach($this->default_behaviors as $behavior) {
 			$this->addBehavior($behavior);	
 		}

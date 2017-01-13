@@ -67,7 +67,7 @@ class DATABASE_CONFIG {
 		'host' => 'localhost',
 		'login' => 'root',
 		'password' => 'root',
-		'database' => 'buskeeper_db',
+		'database' => 'buskeeper_api',
 		'prefix' => '',
 		'encoding' => 'utf8',
 	);
@@ -79,7 +79,7 @@ class DATABASE_CONFIG {
 		'host' => 'localhost',
 		'login' => 'root',
 		'password' => 'root',
-		'database' => 'buskeeper_db',
+		'database' => 'buskeeper_api',
 		'prefix' => '',
 		'encoding' => 'utf8',
 	);

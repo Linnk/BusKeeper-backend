@@ -1,1287 +1,1560 @@
-<style>
+<style>/*!
+ * Bootstrap Docs (https://getbootstrap.com)
+ * Copyright 2011-2016 The Bootstrap Authors
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under the Creative Commons Attribution 3.0 Unported License. For
+ * details, see https://creativecommons.org/licenses/by/3.0/.
+ */
 .bd-booticon {
-    display: block;
-    width: 9rem;
-    height: 9rem;
-    font-size: 6.5rem;
-    line-height: 9rem;
-    color: #fff;
-    text-align: center;
-    cursor: default;
-    background-color: #563d7c;
-    border-radius: 15%
+  display: block;
+  width: 9rem;
+  height: 9rem;
+  font-size: 6.5rem;
+  line-height: 9rem;
+  color: #fff;
+  text-align: center;
+  cursor: default;
+  background-color: #563d7c;
+  border-radius: 15%;
 }
+
 .bd-booticon.inverse {
-    color: #563d7c;
-    background-color: #fff
+  color: #563d7c;
+  background-color: #fff;
 }
+
 .bd-booticon.outline {
-    background-color: transparent;
-    border: 1px solid #cdbfe3
+  background-color: transparent;
+  border: 1px solid #cdbfe3;
 }
+
 .bd-navbar {
-    font-size: 87.5%
+  padding-right: 0;
+  padding-left: 0;
 }
+
 .bd-navbar .navbar-nav .nav-link {
-    color: #8e869d
+  color: #8e869d;
 }
-.bd-navbar .navbar-nav .nav-link.active,
-.bd-navbar .navbar-nav .nav-link:focus,
-.bd-navbar .navbar-nav .nav-link:hover {
-    color: #373a3c;
-    background-color: transparent
+
+.bd-navbar .navbar-nav .nav-link.active, .bd-navbar .navbar-nav .nav-link:hover, .bd-navbar .navbar-nav .nav-link:focus {
+  color: #373a3c;
+  background-color: transparent;
 }
+
 .bd-navbar .navbar-nav .nav-link.active {
-    color: #000
+  font-weight: 500;
+  color: #121314;
 }
+
 .bd-navbar .dropdown-menu {
-    font-size: inherit
+  font-size: inherit;
 }
+
 @media (max-width: 767px) {
-    .bd-navbar .nav-link {
-        float: none
-    }
-    .bd-navbar .nav-link+.nav-link {
-        margin-left: 0
-    }
+  .bd-navbar .nav-link {
+    float: none;
+  }
+  .bd-navbar .nav-link + .nav-link {
+    margin-left: 0;
+  }
 }
+
 .bd-masthead {
-    position: relative;
-    padding: 3rem .9375rem 2rem;
-    color: #cdbfe3;
-    text-align: center;
-    background-image: -webkit-linear-gradient(135deg, #271b38, #563d7c, #7952b3);
-    background-image: -webkit-linear-gradient(315deg, #271b38, #563d7c, #7952b3);
-    background-image: -o-linear-gradient(315deg, #271b38, #563d7c, #7952b3);
-    background-image: linear-gradient(135deg, #271b38, #563d7c, #7952b3);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#FF271B38', endColorstr='#FF7952B3', gradientType='1')
+  position: relative;
+  padding: 3rem 15px 2rem;
+  color: #cdbfe3;
+  text-align: center;
+  background-image: -webkit-linear-gradient(315deg, #271b38, #563d7c, #7952b3);
+  background-image: -o-linear-gradient(315deg, #271b38, #563d7c, #7952b3);
+  background-image: linear-gradient(135deg, #271b38, #563d7c, #7952b3);
 }
+
 .bd-masthead .bd-booticon {
-    margin: 0 auto 2rem;
-    color: #cdbfe3;
-    border-color: #cdbfe3
+  margin: 0 auto 2rem;
+  color: #cdbfe3;
+  border-color: #cdbfe3;
 }
+
 .bd-masthead h1 {
-    font-weight: 300;
-    line-height: 1
+  font-weight: 300;
+  line-height: 1;
 }
+
 .bd-masthead .lead {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2rem;
-    font-size: 1.25rem;
-    color: #fff
+  margin-right: auto;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  font-size: 1.25rem;
+  color: #fff;
 }
+
 .bd-masthead .version {
-    margin-top: -1rem;
-    margin-bottom: 2rem
+  margin-top: -1rem;
+  margin-bottom: 2rem;
 }
+
 .bd-masthead .btn {
-    width: 100%;
-    padding: 1rem 2rem;
-    font-size: 1.25rem;
-    font-weight: 500;
-    color: #ffe484;
-    border-color: #ffe484
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #ffe484;
+  border-color: #ffe484;
 }
+
 .bd-masthead .btn:hover {
-    color: #2a2730;
-    background-color: #ffe484;
-    border-color: #ffe484
+  color: #2a2730;
+  background-color: #ffe484;
+  border-color: #ffe484;
 }
+
 .bd-masthead .carbonad {
-    margin-bottom: -2rem!important
+  margin-bottom: -2rem !important;
 }
-@media (min-width: 544px) {
-    .bd-masthead {
-        padding-top: 8rem;
-        padding-bottom: 2rem
-    }
-    .bd-masthead .btn {
-        width: auto
-    }
-    .bd-masthead .carbonad {
-        margin-bottom: 0!important
-    }
+
+@media (min-width: 576px) {
+  .bd-masthead {
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+  }
+  .bd-masthead .btn {
+    width: auto;
+  }
+  .bd-masthead .carbonad {
+    margin-bottom: 0 !important;
+  }
 }
+
 @media (min-width: 768px) {
-    .bd-masthead {
-        padding-bottom: 4rem
-    }
-    .bd-masthead .bd-header {
-        margin-bottom: 4rem
-    }
-    .bd-masthead h1 {
-        font-size: 4rem
-    }
-    .bd-masthead .lead {
-        font-size: 1.5rem
-    }
-    .bd-masthead .carbonad {
-        margin-top: 3rem!important
-    }
+  .bd-masthead {
+    padding-bottom: 4rem;
+  }
+  .bd-masthead .bd-header {
+    margin-bottom: 4rem;
+  }
+  .bd-masthead h1 {
+    font-size: 4rem;
+  }
+  .bd-masthead .lead {
+    font-size: 1.5rem;
+  }
+  .bd-masthead .carbonad {
+    margin-top: 3rem !important;
+  }
 }
+
 @media (min-width: 992px) {
-    .bd-masthead .lead {
-        width: 85%;
-        font-size: 2rem
-    }
-}
-.bd-featurette {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #555;
-    text-align: center;
-    background-color: #fff;
-    border-top: 1px solid #eee
-}
-.bd-featurette .highlight {
-    text-align: left
-}
-.bd-featurette .lead {
-    margin-right: auto;
-    margin-bottom: 2rem;
-    margin-left: auto;
-    font-size: 1rem;
-    text-align: center
-}
-@media (min-width: 544px) {
-    .bd-featurette {
-        text-align: left
-    }
-}
-@media (min-width: 768px) {
-    .bd-featurette .col-sm-6:first-child {
-        padding-right: 2.8125rem
-    }
-    .bd-featurette .col-sm-6:last-child {
-        padding-left: 2.8125rem
-    }
-}
-.bd-featurette-title {
-    margin-bottom: .5rem;
+  .bd-masthead .lead {
+    width: 85%;
     font-size: 2rem;
-    font-weight: 400;
-    color: #333;
-    text-align: center
+  }
 }
-.half-rule {
-    width: 6rem;
-    margin: 2.5rem auto
+
+.bd-featurette {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+  text-align: center;
+  background-color: #fff;
+  border-top: 1px solid #eee;
 }
-@media (min-width: 544px) {
-    .half-rule {
-        margin-right: 0;
-        margin-left: 0
-    }
+
+.bd-featurette .highlight {
+  text-align: left;
 }
-.bd-featurette h4 {
-    margin-top: 1rem;
-    margin-bottom: .5rem;
-    font-weight: 400;
-    color: #333
+
+.bd-featurette .lead {
+  margin-right: auto;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  font-size: 1rem;
+  text-align: center;
 }
-.bd-featurette-img {
-    display: block;
-    margin-bottom: 1.25rem;
-    color: #333
-}
-.bd-featurette-img:hover {
-    color: #0275d8;
-    text-decoration: none
-}
-.bd-featurette-img img {
-    display: block;
-    margin-bottom: 1rem
-}
-@media (min-width: 480px) {
-    .bd-featurette .img-fluid {
-        margin-top: 2rem
-    }
-}
-@media (min-width: 768px) {
-    .bd-featurette {
-        padding-top: 6rem;
-        padding-bottom: 6rem
-    }
-    .bd-featurette-title {
-        font-size: 2.5rem
-    }
-    .bd-featurette-title+.lead {
-        font-size: 1.5rem
-    }
-    .bd-featurette .lead {
-        max-width: 80%
-    }
-    .bd-featurette .img-fluid {
-        margin-top: 0
-    }
-}
-.bd-featured-sites {
-    margin-right: -1px;
-    margin-left: -1px
-}
-.bd-featured-sites .col-xs-6 {
-    padding: 1px
-}
-.bd-featured-sites .img-fluid {
-    margin-top: 0
-}
-@media (min-width: 768px) {
-    .bd-featured-sites .col-sm-3:first-child img {
-        border-top-left-radius: .25rem;
-        border-bottom-left-radius: .25rem
-    }
-    .bd-featured-sites .col-sm-3:last-child img {
-        border-top-right-radius: .25rem;
-        border-bottom-right-radius: .25rem
-    }
-}
-.carbonad {
-    width: auto!important;
-    height: auto!important;
-    padding: 1.25rem!important;
-    margin: 2rem -1.875rem -2rem!important;
-    overflow: hidden;
-    font-size: .8rem!important;
-    font-family: inherit!important;
-    line-height: 1rem!important;
-    color: #cdbfe3!important;
+
+@media (min-width: 576px) {
+  .bd-featurette {
     text-align: left;
-    background: #3e2c5a!important;
-    border: 0!important
+  }
 }
-.carbonad-img {
-    margin: 0!important
-}
-.carbonad-tag,
-.carbonad-text {
-    display: block!important;
-    float: none!important;
-    width: auto!important;
-    height: auto!important;
-    margin-left: 145px!important;
-    font-family: inherit!important
-}
-.carbonad-text {
-    padding-top: 0!important
-}
-.carbonad-tag {
-    color: inherit!important;
-    text-align: left!important
-}
-.carbonad-tag a,
-.carbonad-text a {
-    color: #cdbfe3!important
-}
-.carbonad-tag a:hover,
-.carbonad-text a:hover {
-    color: #fff!important
-}
-.carbonad #azcarbon>img {
-    display: none
-}
-@media (min-width: 544px) {
-    .carbonad {
-        width: 330px!important;
-        padding: 1rem!important;
-        margin-right: auto!important;
-        margin-left: auto!important;
-        border-radius: .25rem
-    }
-}
-.bd-content>table {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    overflow-y: auto;
-    margin-bottom: 1rem
-}
-.bd-content>table>tbody>tr>td,
-.bd-content>table>tbody>tr>th,
-.bd-content>table>tfoot>tr>td,
-.bd-content>table>tfoot>tr>th,
-.bd-content>table>thead>tr>td,
-.bd-content>table>thead>tr>th {
-    padding: .75rem;
-    line-height: 1.5;
-    vertical-align: top;
-    border: 1px solid #eceeef
-}
-.bd-content>table>tbody>tr>td>p:last-child,
-.bd-content>table>tbody>tr>th>p:last-child,
-.bd-content>table>tfoot>tr>td>p:last-child,
-.bd-content>table>tfoot>tr>th>p:last-child,
-.bd-content>table>thead>tr>td>p:last-child,
-.bd-content>table>thead>tr>th>p:last-child {
-    margin-bottom: 0
-}
-.bd-content>table td:first-child>code {
-    white-space: nowrap
-}
-.bd-content>h2:not(:first-child) {
-    margin-top: 3rem
-}
-.bd-content>h3 {
-    margin-top: 1.5rem
-}
-.bd-content>ol li,
-.bd-content>ul li {
-    margin-bottom: .25rem
-}
-@media (min-width: 544px) {
-    .bd-title {
-        font-size: 3rem
-    }
-    .bd-title+p {
-        font-size: 1.25rem;
-        font-weight: 300
-    }
-}
-#markdown-toc>li:first-child {
-    display: none
-}
-#markdown-toc ul {
-    padding-left: 2rem;
-    margin-top: .25rem;
-    margin-bottom: .25rem
-}
-.bd-pageheader {
-    padding: 2rem .9375rem;
-    margin-bottom: 1.5rem;
-    color: #cdbfe3;
-    text-align: center;
-    background-color: #563d7c
-}
-.bd-pageheader .container {
-    position: relative
-}
-.bd-pageheader h1 {
-    font-size: 3rem;
-    font-weight: 400;
-    color: #fff
-}
-.bd-pageheader p {
-    margin-bottom: 0;
-    font-size: 1.25rem;
-    font-weight: 300
-}
-@media (min-width: 544px) {
-    .bd-pageheader {
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-        margin-bottom: 3rem;
-        text-align: left
-    }
-    .bd-pageheader .carbonad {
-        margin: 2rem 0 0!important
-    }
-}
+
 @media (min-width: 768px) {
-    .bd-pageheader h1 {
-        font-size: 4rem
-    }
-    .bd-pageheader p {
-        font-size: 1.5rem
-    }
+  .bd-featurette .col-sm-6:first-child {
+    padding-right: 45px;
+  }
+  .bd-featurette .col-sm-6:last-child {
+    padding-left: 45px;
+  }
 }
+
+.bd-featurette-title {
+  margin-bottom: .5rem;
+  font-size: 2rem;
+  font-weight: normal;
+  color: #333;
+  text-align: center;
+}
+
+.half-rule {
+  width: 6rem;
+  margin: 2.5rem auto;
+}
+
+@media (min-width: 576px) {
+  .half-rule {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.bd-featurette h4 {
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+  font-weight: normal;
+  color: #333;
+}
+
+.bd-featurette-img {
+  display: block;
+  margin-bottom: 1.25rem;
+  color: #333;
+}
+
+.bd-featurette-img:hover {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+.bd-featurette-img img {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 480px) {
+  .bd-featurette .img-fluid {
+    margin-top: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .bd-featurette {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  .bd-featurette-title {
+    font-size: 2.5rem;
+  }
+  .bd-featurette-title + .lead {
+    font-size: 1.5rem;
+  }
+  .bd-featurette .lead {
+    max-width: 80%;
+  }
+  .bd-featurette .img-fluid {
+    margin-top: 0;
+  }
+}
+
+.bd-featured-sites {
+  margin-right: -1px;
+  margin-left: -1px;
+}
+
+.bd-featured-sites .col-xs-6 {
+  padding: 1px;
+}
+
+.bd-featured-sites .img-fluid {
+  margin-top: 0;
+}
+
+@media (min-width: 768px) {
+  .bd-featured-sites .col-sm-3:first-child img {
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+  }
+  .bd-featured-sites .col-sm-3:last-child img {
+    border-top-right-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+  }
+}
+
+#carbonads {
+  display: block;
+  padding: 15px 15px 15px 160px;
+  margin: 50px -15px 0;
+  overflow: hidden;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: left;
+  border: solid #866ab3;
+  border-width: 1px 0 0;
+}
+
+#carbonads a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (min-width: 576px) {
+  #carbonads {
+    max-width: 330px;
+    margin: 50px auto 0;
+    border-width: 1px;
+    border-radius: 4px;
+  }
+}
+
 @media (min-width: 992px) {
-    .bd-pageheader h1,
-    .bd-pageheader p {
-        margin-right: 380px
-    }
-    .bd-pageheader .carbonad {
-        position: absolute;
-        top: 0;
-        right: .75rem;
-        margin: 0!important
-    }
-}
-#skippy {
-    display: block;
-    padding: 1em;
-    color: #fff;
-    background-color: #563d7c;
-    outline: 0
-}
-#skippy .skiplink-text {
-    padding: .5em;
-    outline: 1px dotted
-}
-@media (min-width: 768px) {
-    .bd-sidebar {
-        padding-left: 1rem
-    }
-}
-.bd-search {
-    position: relative;
-    margin-bottom: 1.5rem
-}
-.bd-search .form-control {
-    height: 2.45rem;
-    padding-top: .4rem;
-    padding-bottom: .4rem;
-    background-color: #fafafa
-}
-.bd-search .form-control:focus {
-    background-color: #fff
-}
-.bd-search-results {
-    right: 0;
-    display: block;
-    padding: 0;
-    overflow: hidden;
-    font-size: .9rem
-}
-.bd-search-results:empty {
-    display: none
-}
-.bd-search-results .dropdown-item {
-    padding-left: .75rem;
-    padding-right: .75rem
-}
-.bd-search-results .dropdown-item:first-child {
-    margin-top: .25rem
-}
-.bd-search-results .dropdown-item:last-child {
-    margin-bottom: .25rem
-}
-.bd-search-results .no-results {
-    padding: .75rem 1rem;
-    color: #7a7a7a;
-    text-align: center;
-    white-space: normal
-}
-.bd-sidenav {
-    display: none
-}
-.bd-toc-link {
-    display: block;
-    padding: .25rem .75rem;
-    color: #55595c
-}
-.bd-toc-link:focus,
-.bd-toc-link:hover {
-    color: #0275d8;
-    text-decoration: none
-}
-.active>.bd-toc-link {
-    font-weight: 500;
-    color: #373a3c
-}
-.active>.bd-sidenav {
-    display: block
-}
-.bd-toc-item.active {
-    margin-top: 1rem;
-    margin-bottom: 1rem
-}
-.bd-toc-item:first-child {
-    margin-top: 0
-}
-.bd-toc-item:last-child {
-    margin-bottom: 2rem
-}
-.bd-sidebar .nav>li>a {
-    display: block;
-    padding: .25rem .75rem;
-    font-size: 90%;
-    color: #99979c
-}
-.bd-sidebar .nav>li>a:focus,
-.bd-sidebar .nav>li>a:hover {
-    color: #0275d8;
-    text-decoration: none;
-    background-color: transparent
-}
-.bd-sidebar .nav>.active:focus>a,
-.bd-sidebar .nav>.active:hover>a,
-.bd-sidebar .nav>.active>a {
-    font-weight: 500;
-    color: #373a3c;
-    background-color: transparent
-}
-.bd-footer {
-    padding: 4rem 0;
-    margin-top: 4rem;
-    font-size: 85%;
-    background-color: #f7f7f7;
-    text-align: center
-}
-.bd-footer a {
-    font-weight: 500;
-    color: #55595c
-}
-.bd-footer a:hover {
-    color: #0275d8
-}
-.bd-footer p {
-    margin-bottom: 0
-}
-@media (min-width: 544px) {
-    .bd-footer {
-        text-align: left
-    }
-}
-.bd-footer-links {
-    padding-left: 0;
-    margin-bottom: 1rem
-}
-.bd-footer-links li {
-    display: inline-block
-}
-.bd-footer-links li+li {
-    margin-left: 1rem
-}
-.bd-example-row .row {
-    margin-bottom: 1rem
-}
-.bd-example-row .row>[class^=col-] {
-    padding-top: .75rem;
-    padding-bottom: .75rem;
-    background-color: rgba(86, 61, 124, .15);
-    border: 1px solid rgba(86, 61, 124, .2)
-}
-.bd-example-container {
-    min-width: 16rem;
-    max-width: 25rem;
-    margin-left: auto;
-    margin-right: auto
-}
-.bd-example-container-header {
-    height: 3rem;
-    margin-bottom: .5rem;
-    background-color: #daeeff;
-    border-radius: .25rem
-}
-.bd-example-container-sidebar {
-    float: right;
-    width: 4rem;
-    height: 8rem;
-    background-color: #fae3c4;
-    border-radius: .25rem
-}
-.bd-example-container-body {
-    height: 8rem;
-    margin-right: 4.5rem;
-    background-color: #957bbe;
-    border-radius: .25rem
-}
-.bd-example-container-fluid {
-    max-width: none
-}
-.bd-example {
-    position: relative;
-    padding: 1rem;
-    margin: 1rem -1rem;
-    border: solid #f7f7f9;
-    border-width: .2rem 0 0
-}
-.bd-example::after {
-    content: "";
-    display: table;
-    clear: both
-}
-@media (min-width: 544px) {
-    .bd-example {
-        margin-left: 0;
-        margin-right: 0;
-        margin-bottom: 0;
-        padding: 1.5rem;
-        border-width: .2rem
-    }
-}
-.bd-example+.clipboard+.highlight,
-.bd-example+.highlight {
-    margin-top: 0
-}
-.bd-example+p {
-    margin-top: 2rem
-}
-.bd-example .container {
-    width: auto
-}
-.bd-example>.form-control+.form-control {
-    margin-top: .5rem
-}
-.bd-example>.card {
-    max-width: 20rem
-}
-.bd-example>.alert+.alert,
-.bd-example>.nav+.nav,
-.bd-example>.navbar+.navbar,
-.bd-example>.progress+.btn,
-.bd-example>.progress+.progress {
-    margin-top: 1rem
-}
-.bd-example>.dropdown-menu:first-child {
+  #carbonads {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    margin-top: 0;
+  }
+  .bd-masthead #carbonads {
     position: static;
-    display: block
+  }
 }
-.bd-example>.close {
-    float: none
+
+.carbon-img {
+  float: left;
+  margin-left: -145px;
 }
+
+.carbon-poweredby {
+  display: block;
+  color: #cdbfe3 !important;
+}
+
+.bd-content > table {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  overflow-y: auto;
+}
+
+.bd-content > table > thead > tr > th,
+.bd-content > table > thead > tr > td,
+.bd-content > table > tbody > tr > th,
+.bd-content > table > tbody > tr > td,
+.bd-content > table > tfoot > tr > th,
+.bd-content > table > tfoot > tr > td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border: 1px solid #eceeef;
+}
+
+.bd-content > table > thead > tr > th > p:last-child,
+.bd-content > table > thead > tr > td > p:last-child,
+.bd-content > table > tbody > tr > th > p:last-child,
+.bd-content > table > tbody > tr > td > p:last-child,
+.bd-content > table > tfoot > tr > th > p:last-child,
+.bd-content > table > tfoot > tr > td > p:last-child {
+  margin-bottom: 0;
+}
+
+.bd-content > table td:first-child > code {
+  white-space: nowrap;
+}
+
+.bd-content > h2:not(:first-child) {
+  margin-top: 3rem;
+}
+
+.bd-content > h3 {
+  margin-top: 1.5rem;
+}
+
+.bd-content > ul li,
+.bd-content > ol li {
+  margin-bottom: .25rem;
+}
+
+@media (min-width: 576px) {
+  .bd-title {
+    font-size: 3rem;
+  }
+  .bd-title + p {
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+}
+
+#markdown-toc > li:first-child {
+  display: none;
+}
+
+#markdown-toc ul {
+  padding-left: 2rem;
+  margin-top: .25rem;
+  margin-bottom: .25rem;
+}
+
+.bd-pageheader {
+  padding: 2rem 15px;
+  margin-bottom: 1.5rem;
+  color: #cdbfe3;
+  text-align: center;
+  background-color: #563d7c;
+}
+
+.bd-pageheader .container {
+  position: relative;
+}
+
+.bd-pageheader h1 {
+  font-size: 3rem;
+  font-weight: normal;
+  color: #fff;
+}
+
+.bd-pageheader p {
+  margin-bottom: 0;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+@media (min-width: 576px) {
+  .bd-pageheader {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-bottom: 3rem;
+    text-align: left;
+  }
+  .bd-pageheader .carbonad {
+    margin: 2rem 0 0 !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .bd-pageheader h1 {
+    font-size: 4rem;
+  }
+  .bd-pageheader p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .bd-pageheader h1,
+  .bd-pageheader p {
+    margin-right: 380px;
+  }
+  .bd-pageheader .carbonad {
+    position: absolute;
+    top: 0;
+    right: .75rem;
+    margin: 0 !important;
+  }
+}
+
+#skippy {
+  display: block;
+  padding: 1em;
+  color: #fff;
+  background-color: #563d7c;
+  outline: 0;
+}
+
+#skippy .skiplink-text {
+  padding: .5em;
+  outline: 1px dotted;
+}
+
+@media (min-width: 768px) {
+  .bd-sidebar {
+    padding-left: 1rem;
+  }
+}
+
+.bd-search {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.bd-search .form-control {
+  height: 2.45rem;
+  padding-top: .4rem;
+  padding-bottom: .4rem;
+  background-color: #fafafa;
+}
+
+.bd-search .form-control:focus {
+  background-color: #fff;
+}
+
+.bd-search-results {
+  right: 0;
+  display: block;
+  padding: 0;
+  overflow: hidden;
+  font-size: .9rem;
+}
+
+.bd-search-results:empty {
+  display: none;
+}
+
+.bd-search-results .dropdown-item {
+  padding-right: .75rem;
+  padding-left: .75rem;
+}
+
+.bd-search-results .dropdown-item:first-child {
+  margin-top: .25rem;
+}
+
+.bd-search-results .dropdown-item:last-child {
+  margin-bottom: .25rem;
+}
+
+.bd-search-results .no-results {
+  padding: .75rem 1rem;
+  color: #7a7a7a;
+  text-align: center;
+  white-space: normal;
+}
+
+.bd-sidenav {
+  display: none;
+}
+
+.bd-toc-link {
+  display: block;
+  padding: .25rem .75rem;
+  color: #55595c;
+}
+
+.bd-toc-link:hover,
+.bd-toc-link:focus {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+.active > .bd-toc-link {
+  font-weight: 500;
+  color: #373a3c;
+}
+
+.active > .bd-sidenav {
+  display: block;
+}
+
+.bd-toc-item.active {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.bd-toc-item:first-child {
+  margin-top: 0;
+}
+
+.bd-toc-item:last-child {
+  margin-bottom: 2rem;
+}
+
+.bd-sidebar .nav > li > a {
+  display: block;
+  padding: .25rem .75rem;
+  font-size: 90%;
+  color: #99979c;
+}
+
+.bd-sidebar .nav > li > a:hover,
+.bd-sidebar .nav > li > a:focus {
+  color: #0275d8;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.bd-sidebar .nav > .active > a,
+.bd-sidebar .nav > .active:hover > a,
+.bd-sidebar .nav > .active:focus > a {
+  font-weight: 500;
+  color: #373a3c;
+  background-color: transparent;
+}
+
+.bd-footer {
+  padding: 4rem 0;
+  margin-top: 4rem;
+  font-size: 85%;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+.bd-footer a {
+  font-weight: 500;
+  color: #55595c;
+}
+
+.bd-footer a:hover {
+  color: #0275d8;
+}
+
+.bd-footer p {
+  margin-bottom: 0;
+}
+
+@media (min-width: 576px) {
+  .bd-footer {
+    text-align: left;
+  }
+}
+
+.bd-footer-links {
+  padding-left: 0;
+  margin-bottom: 1rem;
+}
+
+.bd-footer-links li {
+  display: inline-block;
+}
+
+.bd-footer-links li + li {
+  margin-left: 1rem;
+}
+
+.bd-example-row .row + .row {
+  margin-top: 1rem;
+}
+
+.bd-example-row .row > .col,
+.bd-example-row .row > [class^="col-"] {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  background-color: rgba(86, 61, 124, 0.15);
+  border: 1px solid rgba(86, 61, 124, 0.2);
+}
+
+.bd-example-row .flex-items-xs-top,
+.bd-example-row .flex-items-xs-middle,
+.bd-example-row .flex-items-xs-bottom {
+  min-height: 6rem;
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.bd-example-row-flex-cols .row {
+  min-height: 10rem;
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.bd-example-container {
+  min-width: 16rem;
+  max-width: 25rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.bd-example-container-header {
+  height: 3rem;
+  margin-bottom: .5rem;
+  background-color: #daeeff;
+  border-radius: .25rem;
+}
+
+.bd-example-container-sidebar {
+  float: right;
+  width: 4rem;
+  height: 8rem;
+  background-color: #fae3c4;
+  border-radius: .25rem;
+}
+
+.bd-example-container-body {
+  height: 8rem;
+  margin-right: 4.5rem;
+  background-color: #957bbe;
+  border-radius: .25rem;
+}
+
+.bd-example-container-fluid {
+  max-width: none;
+}
+
+.bd-example {
+  position: relative;
+  padding: 1rem;
+  margin: 1rem -1rem;
+  border: solid #f7f7f9;
+  border-width: .2rem 0 0;
+}
+
+.bd-example::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (min-width: 576px) {
+  .bd-example {
+    padding: 1.5rem;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    border-width: .2rem;
+  }
+}
+
+.bd-example + .highlight,
+.bd-example + .clipboard + .highlight {
+  margin-top: 0;
+}
+
+.bd-example + p {
+  margin-top: 2rem;
+}
+
+.bd-example .container {
+  width: auto;
+}
+
+.bd-example > .form-control + .form-control {
+  margin-top: .5rem;
+}
+
+.bd-example > .card {
+  max-width: 20rem;
+}
+
+.bd-example > .nav + .nav,
+.bd-example > .alert + .alert,
+.bd-example > .navbar + .navbar,
+.bd-example > .progress + .progress,
+.bd-example > .progress + .btn {
+  margin-top: 1rem;
+}
+
+.bd-example > .dropdown-menu:first-child {
+  position: static;
+  display: block;
+}
+
+.bd-example > .form-group:last-child {
+  margin-bottom: 0;
+}
+
+.bd-example > .close {
+  float: none;
+}
+
 .bd-example-type .table .type-info {
-    color: #999;
-    vertical-align: middle
+  color: #999;
+  vertical-align: middle;
 }
+
 .bd-example-type .table td {
-    padding: 1rem 0;
-    border-color: #eee
+  padding: 1rem 0;
+  border-color: #eee;
 }
+
 .bd-example-type .table tr:first-child td {
-    border-top: 0
+  border-top: 0;
 }
+
 .bd-example-type h1,
 .bd-example-type h2,
 .bd-example-type h3,
 .bd-example-type h4,
 .bd-example-type h5,
 .bd-example-type h6 {
-    margin: 0
+  margin: 0;
 }
+
 .bd-example-bg-classes p {
-    padding: 1rem
+  padding: 1rem;
 }
-.bd-example>img+img {
-    margin-left: .5rem
+
+.bd-example > img + img {
+  margin-left: .5rem;
 }
-.bd-example>.btn-group {
-    margin-top: .25rem;
-    margin-bottom: .25rem
+
+.bd-example > .btn-group {
+  margin-top: .25rem;
+  margin-bottom: .25rem;
 }
-.bd-example>.btn-toolbar+.btn-toolbar {
-    margin-top: .5rem
+
+.bd-example > .btn-toolbar + .btn-toolbar {
+  margin-top: .5rem;
 }
-.bd-example-control-sizing input[type=text]+input[type=text],
-.bd-example-control-sizing select {
-    margin-top: .5rem
+
+.bd-example-control-sizing select,
+.bd-example-control-sizing input[type="text"] + input[type="text"] {
+  margin-top: .5rem;
 }
+
 .bd-example-form .input-group {
-    margin-bottom: .5rem
+  margin-bottom: .5rem;
 }
-.bd-example>textarea.form-control {
-    resize: vertical
+
+.bd-example > textarea.form-control {
+  resize: vertical;
 }
-.bd-example>.list-group {
-    max-width: 400px
+
+.bd-example > .list-group {
+  max-width: 400px;
 }
+
 .bd-example .navbar-fixed-top {
-    position: static;
-    margin: -1rem -1rem 1rem
+  position: static;
+  margin: -1rem -1rem 1rem;
 }
+
 .bd-example .navbar-fixed-bottom {
-    position: static;
-    margin: 1rem -1rem -1rem
+  position: static;
+  margin: 1rem -1rem -1rem;
 }
-@media (min-width: 544px) {
-    .bd-example .navbar-fixed-top {
-        margin: -1.5rem -1.5rem 1rem
-    }
-    .bd-example .navbar-fixed-bottom {
-        margin: 1rem -1.5rem -1.5rem
-    }
+
+@media (min-width: 576px) {
+  .bd-example .navbar-fixed-top {
+    margin: -1.5rem -1.5rem 1rem;
+  }
+  .bd-example .navbar-fixed-bottom {
+    margin: 1rem -1.5rem -1.5rem;
+  }
 }
+
 .bd-example .pagination {
-    margin-top: .5rem;
-    margin-bottom: .5rem
+  margin-top: .5rem;
+  margin-bottom: .5rem;
 }
-.bd-example>.pager {
-    margin-top: 0
-}
+
 .bd-example-modal {
-    background-color: #f5f5f5
+  background-color: #f5f5f5;
 }
+
 .bd-example-modal .modal {
-    position: relative;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: auto;
-    z-index: 1;
-    display: block
+  position: relative;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  z-index: 1;
+  display: block;
 }
+
 .bd-example-modal .modal-dialog {
-    left: auto;
-    margin-right: auto;
-    margin-left: auto
+  left: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
-.bd-example>.dropdown>.dropdown-toggle {
-    float: left
+
+.bd-example > .dropdown > .dropdown-toggle {
+  float: left;
 }
-.bd-example>.dropdown>.dropdown-menu {
-    position: static;
-    display: block;
-    margin-bottom: .25rem;
-    clear: left
+
+.bd-example > .dropdown > .dropdown-menu {
+  position: static;
+  display: block;
+  margin-bottom: .25rem;
+  clear: left;
 }
+
 .bd-example-tabs .nav-tabs {
-    margin-bottom: 1rem
+  margin-bottom: 1rem;
 }
+
 .bd-example-tooltips {
-    text-align: center
+  text-align: center;
 }
-.bd-example-tooltips>.btn {
-    margin-top: .25rem;
-    margin-bottom: .25rem
+
+.bd-example-tooltips > .btn {
+  margin-top: .25rem;
+  margin-bottom: .25rem;
 }
+
 .bd-example-popover-static {
-    padding-bottom: 1.5rem;
-    background-color: #f9f9f9
+  padding-bottom: 1.5rem;
+  background-color: #f9f9f9;
 }
+
 .bd-example-popover-static .popover {
-    position: relative;
-    display: block;
-    float: left;
-    width: 260px;
-    margin: 1.25rem
+  position: relative;
+  display: block;
+  float: left;
+  width: 260px;
+  margin: 1.25rem;
 }
+
 .tooltip-demo a {
-    white-space: nowrap
+  white-space: nowrap;
 }
+
 .bd-example-tooltip-static .tooltip {
-    position: relative;
-    display: inline-block;
-    margin: 10px 20px;
-    opacity: 1
+  position: relative;
+  display: inline-block;
+  margin: 10px 20px;
+  opacity: 1;
 }
+
 .scrollspy-example {
-    position: relative;
-    height: 200px;
-    margin-top: .5rem;
-    overflow: auto
+  position: relative;
+  height: 200px;
+  margin-top: .5rem;
+  overflow: auto;
 }
-.bd-example>.center-block:not(img) {
-    max-width: 200px;
-    padding: .5rem;
-    background-color: #eee
+
+.bd-example > .bg-primary:not(.navbar),
+.bd-example > .bg-success:not(.navbar),
+.bd-example > .bg-info:not(.navbar),
+.bd-example > .bg-warning:not(.navbar),
+.bd-example > .bg-danger:not(.navbar),
+.bd-example > .bg-inverse:not(.navbar) {
+  padding: .5rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
 }
-.bd-example>.bg-danger:not(.navbar),
-.bd-example>.bg-info:not(.navbar),
-.bd-example>.bg-inverse:not(.navbar),
-.bd-example>.bg-primary:not(.navbar),
-.bd-example>.bg-success:not(.navbar),
-.bd-example>.bg-warning:not(.navbar) {
-    padding: .5rem;
-    margin-top: .5rem;
-    margin-bottom: .5rem
-}
+
 .highlight {
-    padding: 1rem;
-    margin: 1rem -1rem;
-    background-color: #f7f7f9
+  padding: 1rem;
+  margin: 1rem -15px;
+  background-color: #f7f7f9;
 }
-@media (min-width: 544px) {
-    .highlight {
-        padding: 1.5rem;
-        margin-right: 0;
-        margin-left: 0
-    }
+
+@media (min-width: 576px) {
+  .highlight {
+    padding: 1.5rem;
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
+
 .highlight pre {
-    padding: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    background-color: transparent;
-    border: 0
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: transparent;
+  border: 0;
 }
+
 .highlight pre code {
-    font-size: inherit;
-    color: #373a3c
+  font-size: inherit;
+  color: #373a3c;
 }
-#focusedInput {
-    border-color: #66afe9;
-    outline: 0;
-    outline: thin dotted\9;
-    -webkit-box-shadow: 0 0 .5rem rgba(102, 175, 233, .6);
-    box-shadow: 0 0 .5rem rgba(102, 175, 233, .6)
-}
+
 .table-responsive .highlight pre {
-    white-space: normal
+  white-space: normal;
 }
+
 .bd-table th small,
 .responsive-utilities th small {
-    display: block;
-    font-weight: 400;
-    color: #999
+  display: block;
+  font-weight: normal;
+  color: #999;
 }
+
 .responsive-utilities tbody th {
-    font-weight: 400
+  font-weight: normal;
 }
+
 .responsive-utilities td {
-    text-align: center
+  text-align: center;
 }
-.responsive-utilities td.is-visible {
-    color: #468847;
-    background-color: #dff0d8!important
+
+.responsive-utilities .is-visible {
+  color: #468847;
+  background-color: #dff0d8 !important;
 }
-.responsive-utilities td.is-hidden {
-    color: #ccc;
-    background-color: #f9f9f9!important
+
+.responsive-utilities .is-hidden {
+  color: #ccc;
+  background-color: #f9f9f9 !important;
 }
+
 .responsive-utilities-test {
-    margin-top: .25rem
+  margin-top: .25rem;
 }
+
 .responsive-utilities-test .col-xs-6 {
-    margin-bottom: .5rem
+  margin-top: .5rem;
+  margin-bottom: .5rem;
 }
+
 .responsive-utilities-test span {
-    display: block;
-    padding: 1rem .5rem;
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 1.1;
-    text-align: center;
-    border-radius: .25rem
+  display: block;
+  padding: 1rem .5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.1;
+  text-align: center;
+  border-radius: .25rem;
 }
-.hidden-on .col-xs-6>.not-visible,
-.visible-on .col-xs-6>.not-visible {
-    color: #999;
-    border: 1px solid #ddd
+
+.visible-on .col-xs-6 > .not-visible,
+.hidden-on .col-xs-6 > .not-visible {
+  color: #999;
+  border: 1px solid #ddd;
 }
-.hidden-on .col-xs-6 .visible,
-.visible-on .col-xs-6 .visible {
-    color: #468847;
-    background-color: #dff0d8;
-    border: 1px solid #d6e9c6
+
+.visible-on .col-xs-6 .visible,
+.hidden-on .col-xs-6 .visible {
+  color: #468847;
+  background-color: #dff0d8;
+  border: 1px solid #d6e9c6;
 }
-@media (max-width: 543px) {
-    .hidden-xs-only {
-        display: none!important
-    }
+
+@media (max-width: 575px) {
+  .hidden-xs-only {
+    display: none !important;
+  }
 }
-@media (min-width: 544px) and (max-width: 767px) {
-    .hidden-sm-only {
-        display: none!important
-    }
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .hidden-sm-only {
+    display: none !important;
+  }
 }
+
 @media (min-width: 768px) and (max-width: 991px) {
-    .hidden-md-only {
-        display: none!important
-    }
+  .hidden-md-only {
+    display: none !important;
+  }
 }
+
 @media (min-width: 992px) and (max-width: 1199px) {
-    .hidden-lg-only {
-        display: none!important
-    }
+  .hidden-lg-only {
+    display: none !important;
+  }
 }
+
 @media (min-width: 1200px) {
-    .hidden-xl-only {
-        display: none!important
-    }
+  .hidden-xl-only {
+    display: none !important;
+  }
 }
+
 .btn-bs {
-    font-weight: 500;
-    color: #7952b3;
-    border-color: #7952b3
+  font-weight: 500;
+  color: #7952b3;
+  border-color: #7952b3;
 }
-.btn-bs:active,
-.btn-bs:focus,
-.btn-bs:hover {
-    color: #fff;
-    background-color: #7952b3;
-    border-color: #7952b3
+
+.btn-bs:hover, .btn-bs:focus, .btn-bs:active {
+  color: #fff;
+  background-color: #7952b3;
+  border-color: #7952b3;
 }
+
 .bd-callout {
-    padding: 1.25rem;
-    margin-top: 1.25rem;
-    margin-bottom: 1.25rem;
-    border: 1px solid #eee;
-    border-left-width: .25rem;
-    border-radius: .25rem
+  padding: 1.25rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid #eee;
+  border-left-width: .25rem;
+  border-radius: .25rem;
 }
+
 .bd-callout h4 {
-    margin-top: 0;
-    margin-bottom: .25rem
+  margin-top: 0;
+  margin-bottom: .25rem;
 }
+
 .bd-callout p:last-child {
-    margin-bottom: 0
+  margin-bottom: 0;
 }
+
 .bd-callout code {
-    border-radius: .25rem
+  border-radius: .25rem;
 }
-.bd-callout+.bd-callout {
-    margin-top: -.25rem
+
+.bd-callout + .bd-callout {
+  margin-top: -.25rem;
 }
+
 .bd-callout-info {
-    border-left-color: #5bc0de
+  border-left-color: #5bc0de;
 }
+
 .bd-callout-info h4 {
-    color: #5bc0de
+  color: #5bc0de;
 }
+
 .bd-callout-warning {
-    border-left-color: #f0ad4e
+  border-left-color: #f0ad4e;
 }
+
 .bd-callout-warning h4 {
-    color: #f0ad4e
+  color: #f0ad4e;
 }
+
 .bd-callout-danger {
-    border-left-color: #d9534f
+  border-left-color: #d9534f;
 }
+
 .bd-callout-danger h4 {
-    color: #d9534f
+  color: #d9534f;
 }
+
 .bd-examples .img-thumbnail {
-    margin-bottom: .75rem
+  margin-bottom: .75rem;
 }
+
 .bd-examples h4 {
-    margin-bottom: .25rem
+  margin-bottom: .25rem;
 }
+
 .bd-examples p {
-    margin-bottom: 1.25rem
+  margin-bottom: 1.25rem;
 }
+
 @media (max-width: 480px) {
-    .bd-examples {
-        margin-right: -.75rem;
-        margin-left: -.75rem
-    }
-    .bd-examples>[class^=col-] {
-        padding-right: .75rem;
-        padding-left: .75rem
-    }
+  .bd-examples {
+    margin-right: -.75rem;
+    margin-left: -.75rem;
+  }
+  .bd-examples > [class^="col-"] {
+    padding-right: .75rem;
+    padding-left: .75rem;
+  }
 }
+
 .bd-team {
-    margin-bottom: 1.5rem
+  margin-bottom: 1.5rem;
 }
+
 .bd-team .team-member {
-    line-height: 2rem;
-    color: #555
+  line-height: 2rem;
+  color: #555;
 }
+
 .bd-team .team-member:hover {
-    color: #333;
-    text-decoration: none
+  color: #333;
+  text-decoration: none;
 }
+
 .bd-team .github-btn {
-    border: none;
-    float: right;
-    width: 180px;
-    height: 1.25rem;
-    margin-top: .25rem
+  float: right;
+  width: 180px;
+  height: 1.25rem;
+  margin-top: .25rem;
+  border: 0;
 }
+
 .bd-team img {
-    float: left;
-    width: 2rem;
-    margin-right: .5rem;
-    border-radius: .25rem
+  float: left;
+  width: 2rem;
+  margin-right: .5rem;
+  border-radius: .25rem;
 }
+
 .bd-browser-bugs td p {
-    margin-bottom: 0
+  margin-bottom: 0;
 }
+
 .bd-browser-bugs th:first-child {
-    width: 18%
+  width: 18%;
 }
+
 .bd-brand-logos {
-    display: table;
-    width: 100%;
-    margin-bottom: 1rem;
-    overflow: hidden;
-    color: #563d7c;
-    background-color: #f9f9f9;
-    border-radius: .25rem
+  display: table;
+  width: 100%;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  color: #563d7c;
+  background-color: #f9f9f9;
+  border-radius: .25rem;
 }
+
 .bd-brand-item {
-    padding: 4rem 0;
-    text-align: center
+  padding: 4rem 0;
+  text-align: center;
 }
-.bd-brand-item+.bd-brand-item {
-    border-top: 1px solid #fff
+
+.bd-brand-item + .bd-brand-item {
+  border-top: 1px solid #fff;
 }
+
 .bd-brand-logos .inverse {
-    color: #fff;
-    background-color: #563d7c
+  color: #fff;
+  background-color: #563d7c;
 }
+
 .bd-brand-item h1,
 .bd-brand-item h3 {
-    margin-top: 0;
-    margin-bottom: 0
+  margin-top: 0;
+  margin-bottom: 0;
 }
+
 .bd-brand-item .bd-booticon {
-    margin-right: auto;
-    margin-left: auto
+  margin-right: auto;
+  margin-left: auto;
 }
+
 @media (min-width: 768px) {
-    .bd-brand-item {
-        display: table-cell;
-        width: 1%
-    }
-    .bd-brand-item+.bd-brand-item {
-        border-top: 0;
-        border-left: 1px solid #fff
-    }
-    .bd-brand-item h1 {
-        font-size: 4rem
-    }
+  .bd-brand-item {
+    display: table-cell;
+    width: 1%;
+  }
+  .bd-brand-item + .bd-brand-item {
+    border-top: 0;
+    border-left: 1px solid #fff;
+  }
+  .bd-brand-item h1 {
+    font-size: 4rem;
+  }
 }
+
 .color-swatches {
-    margin: 0 -5px;
-    overflow: hidden
+  margin: 0 -5px;
+  overflow: hidden;
 }
+
 .color-swatch {
-    float: left;
-    width: 4rem;
-    height: 4rem;
-    margin-right: .25rem;
-    margin-left: .25rem;
-    border-radius: .25rem
+  float: left;
+  width: 4rem;
+  height: 4rem;
+  margin-right: .25rem;
+  margin-left: .25rem;
+  border-radius: .25rem;
 }
+
 @media (min-width: 768px) {
-    .color-swatch {
-        width: 6rem;
-        height: 6rem
-    }
+  .color-swatch {
+    width: 6rem;
+    height: 6rem;
+  }
 }
+
 .color-swatches .bd-purple {
-    background-color: #563d7c
+  background-color: #563d7c;
 }
+
 .color-swatches .bd-purple-light {
-    background-color: #cdbfe3
+  background-color: #cdbfe3;
 }
+
 .color-swatches .bd-purple-lighter {
-    background-color: #e5e1ea
+  background-color: #e5e1ea;
 }
+
 .color-swatches .bd-gray {
-    background-color: #f9f9f9
+  background-color: #f9f9f9;
 }
+
 .bd-clipboard {
-    position: relative;
-    display: none;
-    float: right
+  position: relative;
+  display: none;
+  float: right;
 }
-.bd-clipboard+.highlight {
-    margin-top: 0
+
+.bd-clipboard + .highlight {
+  margin-top: 0;
 }
+
 .btn-clipboard {
-    position: absolute;
-    top: .5rem;
-    right: .5rem;
-    z-index: 10;
-    display: block;
-    padding: .25rem .5rem;
-    font-size: 75%;
-    color: #818a91;
-    cursor: pointer;
-    background-color: transparent;
-    border-radius: .25rem
+  position: absolute;
+  top: .5rem;
+  right: .5rem;
+  z-index: 10;
+  display: block;
+  padding: .25rem .5rem;
+  font-size: 75%;
+  color: #818a91;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: .25rem;
 }
+
 .btn-clipboard:hover {
-    color: #fff;
-    background-color: #027de7
+  color: #fff;
+  background-color: #027de7;
 }
+
 @media (min-width: 768px) {
-    .bd-clipboard {
-        display: block
-    }
+  .bd-clipboard {
+    display: block;
+  }
 }
+
 .hll {
-    background-color: #ffc
+  background-color: #ffc;
 }
+
 .c {
-    color: #999
+  color: #999;
 }
-.err {
-    color: #A00;
-    background-color: #FAA
-}
+
 .k {
-    color: #069
+  color: #069;
 }
+
 .o {
-    color: #555
+  color: #555;
 }
+
 .cm {
-    color: #999
+  color: #999;
 }
+
 .cp {
-    color: #099
+  color: #099;
 }
+
 .c1 {
-    color: #999
+  color: #999;
 }
+
 .cs {
-    color: #999
+  color: #999;
 }
+
 .gd {
-    background-color: #FCC;
-    border: 1px solid #C00
+  background-color: #fcc;
+  border: 1px solid #c00;
 }
+
 .ge {
-    font-style: italic
+  font-style: italic;
 }
+
 .gr {
-    color: red
+  color: #f00;
 }
+
 .gh {
-    color: #030
+  color: #030;
 }
+
 .gi {
-    background-color: #CFC;
-    border: 1px solid #0C0
+  background-color: #cfc;
+  border: 1px solid #0c0;
 }
+
 .go {
-    color: #AAA
+  color: #aaa;
 }
+
 .gp {
-    color: #009
+  color: #009;
 }
+
 .gu {
-    color: #030
+  color: #030;
 }
+
 .gt {
-    color: #9C6
+  color: #9c6;
 }
+
 .kc {
-    color: #069
+  color: #069;
 }
+
 .kd {
-    color: #069
+  color: #069;
 }
+
 .kn {
-    color: #069
+  color: #069;
 }
+
 .kp {
-    color: #069
+  color: #069;
 }
+
 .kr {
-    color: #069
+  color: #069;
 }
+
 .kt {
-    color: #078
+  color: #078;
 }
+
 .m {
-    color: #F60
+  color: #f60;
 }
+
 .s {
-    color: #d44950
+  color: #d44950;
 }
+
 .na {
-    color: #4f9fcf
+  color: #4f9fcf;
 }
+
 .nb {
-    color: #366
+  color: #366;
 }
+
 .nc {
-    color: #0A8
+  color: #0a8;
 }
+
 .no {
-    color: #360
+  color: #360;
 }
+
 .nd {
-    color: #99F
+  color: #99f;
 }
+
 .ni {
-    color: #999
+  color: #999;
 }
+
 .ne {
-    color: #C00
+  color: #c00;
 }
+
 .nf {
-    color: #C0F
+  color: #c0f;
 }
+
 .nl {
-    color: #99F
+  color: #99f;
 }
+
 .nn {
-    color: #0CF
+  color: #0cf;
 }
+
 .nt {
-    color: #2f6f9f
+  color: #2f6f9f;
 }
+
 .nv {
-    color: #033
+  color: #033;
 }
+
 .ow {
-    color: #000
+  color: #000;
 }
+
 .w {
-    color: #bbb
+  color: #bbb;
 }
+
 .mf {
-    color: #F60
+  color: #f60;
 }
+
 .mh {
-    color: #F60
+  color: #f60;
 }
+
 .mi {
-    color: #F60
+  color: #f60;
 }
+
 .mo {
-    color: #F60
+  color: #f60;
 }
+
 .sb {
-    color: #C30
+  color: #c30;
 }
+
 .sc {
-    color: #C30
+  color: #c30;
 }
+
 .sd {
-    color: #C30;
-    font-style: italic
+  font-style: italic;
+  color: #c30;
 }
+
 .s2 {
-    color: #C30
+  color: #c30;
 }
+
 .se {
-    color: #C30
+  color: #c30;
 }
+
 .sh {
-    color: #C30
+  color: #c30;
 }
+
 .si {
-    color: #A00
+  color: #a00;
 }
+
 .sx {
-    color: #C30
+  color: #c30;
 }
+
 .sr {
-    color: #3AA
+  color: #3aa;
 }
+
 .s1 {
-    color: #C30
+  color: #c30;
 }
+
 .ss {
-    color: #FC3
+  color: #fc3;
 }
+
 .bp {
-    color: #366
+  color: #366;
 }
+
 .vc {
-    color: #033
+  color: #033;
 }
+
 .vg {
-    color: #033
+  color: #033;
 }
+
 .vi {
-    color: #033
+  color: #033;
 }
+
 .il {
-    color: #F60
+  color: #f60;
 }
-.css .nt+.nt,
+
 .css .o,
-.css .o+.nt {
-    color: #999
+.css .o + .nt,
+.css .nt + .nt {
+  color: #999;
 }
+
+.language-bash::before {
+  color: #009;
+  content: "$ ";
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.language-powershell::before {
+  color: #009;
+  content: "PM> ";
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 .anchorjs-link {
-    color: inherit
+  color: inherit;
 }
+
 @media (max-width: 480px) {
-    .anchorjs-link {
-        display: none
-    }
+  .anchorjs-link {
+    display: none;
+  }
 }
-:hover>.anchorjs-link {
-    opacity: .75;
-    -webkit-transition: color .16s linear;
-    -o-transition: color .16s linear;
-    transition: color .16s linear
+
+*:hover > .anchorjs-link {
+  opacity: .75;
+  -webkit-transition: color .16s linear;
+  -o-transition: color .16s linear;
+  transition: color .16s linear;
 }
-.anchorjs-link:focus,
-:hover>.anchorjs-link:hover {
-    text-decoration: none;
-    opacity: 1
-}</style><br><br><br><h1>Bunch of Bootstrap elements</h1><div class=bd-content>
+
+*:hover > .anchorjs-link:hover,
+.anchorjs-link:focus {
+  text-decoration: none;
+  opacity: 1;
+}</style><div class="bd-pageheader container-full"><div class="container"><h1>Bootstrap</h1><p class="lead">Over a dozen reusable components built to provide buttons, dropdowns, input groups, navigation, alerts, and much more.</p></div></div><div class=bd-content>
           <h1 class="bd-title" id="content">Overview</h1>
           <p>Bootstrap includes several components and options for laying out your project, including wrapping containers, a powerful grid system, a flexible media object, and responsive utility classes.</p>
 
@@ -3785,6 +4058,191 @@
     </tr></tbody>
 </table>
 </div><div class=bd-content>
+          <h1 class="bd-title" id="content">Button group</h1>
+          <p>Group a series of buttons together on a single line with the button group. Add on optional JavaScript radio and checkbox style behavior with <a href="/components/buttons/#button-plugin">our buttons plugin</a>.</p>
+
+<h2 id="contents">Contents</h2>
+
+<ul id="markdown-toc">
+<li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
+  <li><a href="#basic-example" id="markdown-toc-basic-example">Basic example</a></li>
+  <li><a href="#button-toolbar" id="markdown-toc-button-toolbar">Button toolbar</a></li>
+  <li><a href="#sizing" id="markdown-toc-sizing">Sizing</a></li>
+  <li><a href="#nesting" id="markdown-toc-nesting">Nesting</a></li>
+  <li><a href="#vertical-variation" id="markdown-toc-vertical-variation">Vertical variation</a></li>
+  <li><a href="#tooltips-and-popovers" id="markdown-toc-tooltips-and-popovers">Tooltips and popovers</a></li>
+</ul>
+<h2 id="basic-example">Basic example</h2>
+
+<p>Wrap a series of buttons with <code class="highlighter-rouge">.btn</code> in <code class="highlighter-rouge">.btn-group</code>.</p>
+
+<div class="bd-example" data-example-id="">
+<div class="btn-group" role="group" aria-label="Basic example">
+  <button type="button" class="btn btn-secondary">Left</button>
+  <button type="button" class="btn btn-secondary">Middle</button>
+  <button type="button" class="btn btn-secondary">Right</button>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"Basic example"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>Left<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>Middle<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>Right<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h2 id="button-toolbar">Button toolbar</h2>
+
+<p>Combine sets of button groups into button toolbars for more complex components.</p>
+
+<div class="bd-example" data-example-id="">
+<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+  <div class="btn-group" role="group" aria-label="First group">
+    <button type="button" class="btn btn-secondary">1</button>
+    <button type="button" class="btn btn-secondary">2</button>
+    <button type="button" class="btn btn-secondary">3</button>
+    <button type="button" class="btn btn-secondary">4</button>
+  </div>
+  <div class="btn-group" role="group" aria-label="Second group">
+    <button type="button" class="btn btn-secondary">5</button>
+    <button type="button" class="btn btn-secondary">6</button>
+    <button type="button" class="btn btn-secondary">7</button>
+  </div>
+  <div class="btn-group" role="group" aria-label="Third group">
+    <button type="button" class="btn btn-secondary">8</button>
+  </div>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-toolbar"</span> <span class="na">role=</span><span class="s">"toolbar"</span> <span class="na">aria-label=</span><span class="s">"Toolbar with button groups"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"First group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>4<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"Second group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>5<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>6<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>7<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"Third group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>8<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h2 id="sizing">Sizing</h2>
+
+<p>Instead of applying button sizing classes to every button in a group, just add <code class="highlighter-rouge">.btn-group-*</code> to each <code class="highlighter-rouge">.btn-group</code>, including each one when nesting multiple groups.</p>
+
+<div class="bd-example">
+  <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
+    <button type="button" class="btn btn-secondary">Left</button>
+    <button type="button" class="btn btn-secondary">Middle</button>
+    <button type="button" class="btn btn-secondary">Right</button>
+  </div>
+  <br><div class="btn-group" role="group" aria-label="Default button group">
+    <button type="button" class="btn btn-secondary">Left</button>
+    <button type="button" class="btn btn-secondary">Middle</button>
+    <button type="button" class="btn btn-secondary">Right</button>
+  </div>
+  <br><div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+    <button type="button" class="btn btn-secondary">Left</button>
+    <button type="button" class="btn btn-secondary">Middle</button>
+    <button type="button" class="btn btn-secondary">Right</button>
+  </div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group btn-group-lg"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"..."</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"..."</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group btn-group-sm"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"..."</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure><h2 id="nesting">Nesting</h2>
+
+<p>Place a <code class="highlighter-rouge">.btn-group</code> within another <code class="highlighter-rouge">.btn-group</code> when you want dropdown menus mixed with a series of buttons.</p>
+
+<div class="bd-example" data-example-id="">
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+  <button type="button" class="btn btn-secondary">1</button>
+  <button type="button" class="btn btn-secondary">2</button>
+
+  <div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Dropdown
+    </button>
+    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+      <a class="dropdown-item" href="#">Dropdown link</a>
+      <a class="dropdown-item" href="#">Dropdown link</a>
+    </div>
+  </div>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"Button group with nested dropdown"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/button&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span> <span class="na">role=</span><span class="s">"group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"btnGroupDrop1"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+      Dropdown
+    <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">aria-labelledby=</span><span class="s">"btnGroupDrop1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Dropdown link<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Dropdown link<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h2 id="vertical-variation">Vertical variation</h2>
+
+<p>Make a set of buttons appear vertically stacked rather than horizontally. <strong>Split button dropdowns are not supported here.</strong></p>
+
+<div class="bd-example">
+  <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+    <button type="button" class="btn btn-secondary">Button</button>
+    <button type="button" class="btn btn-secondary">Button</button>
+    <div class="btn-group" role="group">
+      <button id="btnGroupVerticalDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropdown
+      </button>
+      <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop1">
+        <a class="dropdown-item" href="#">Dropdown link</a>
+        <a class="dropdown-item" href="#">Dropdown link</a>
+      </div>
+    </div>
+    <button type="button" class="btn btn-secondary">Button</button>
+    <button type="button" class="btn btn-secondary">Button</button>
+    <div class="btn-group" role="group">
+      <button id="btnGroupVerticalDrop2" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropdown
+      </button>
+      <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop2">
+        <a class="dropdown-item" href="#">Dropdown link</a>
+        <a class="dropdown-item" href="#">Dropdown link</a>
+      </div>
+    </div>
+    <div class="btn-group" role="group">
+      <button id="btnGroupVerticalDrop3" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropdown
+      </button>
+      <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop3">
+        <a class="dropdown-item" href="#">Dropdown link</a>
+        <a class="dropdown-item" href="#">Dropdown link</a>
+      </div>
+    </div>
+    <div class="btn-group" role="group">
+      <button id="btnGroupVerticalDrop4" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropdown
+      </button>
+      <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop4">
+        <a class="dropdown-item" href="#">Dropdown link</a>
+        <a class="dropdown-item" href="#">Dropdown link</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group-vertical"</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/div&gt;</span></code></pre></figure><h2 id="tooltips-and-popovers">Tooltips and popovers</h2>
+
+<p>Due to the specific implementation (and some other components), a bit of special casing is required for tooltips and popovers within button groups. <strong>Youâll have to specify the option <code class="highlighter-rouge">container: 'body'</code></strong> to avoid unwanted side effects (such as the element growing wider and/or losing its rounded corners when the tooltip or popover is triggered).</p>
+
+        </div><div class=bd-content>
           <h1 class="bd-title" id="content">Cards</h1>
           <p>A <strong>card</strong> is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options.</p>
 
@@ -4778,191 +5236,6 @@
   <span class="p">}</span>
 <span class="p">}</span></code></pre></figure>
 </div><div class=bd-content>
-          <h1 class="bd-title" id="content">Button group</h1>
-          <p>Group a series of buttons together on a single line with the button group. Add on optional JavaScript radio and checkbox style behavior with <a href="/components/buttons/#button-plugin">our buttons plugin</a>.</p>
-
-<h2 id="contents">Contents</h2>
-
-<ul id="markdown-toc">
-<li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
-  <li><a href="#basic-example" id="markdown-toc-basic-example">Basic example</a></li>
-  <li><a href="#button-toolbar" id="markdown-toc-button-toolbar">Button toolbar</a></li>
-  <li><a href="#sizing" id="markdown-toc-sizing">Sizing</a></li>
-  <li><a href="#nesting" id="markdown-toc-nesting">Nesting</a></li>
-  <li><a href="#vertical-variation" id="markdown-toc-vertical-variation">Vertical variation</a></li>
-  <li><a href="#tooltips-and-popovers" id="markdown-toc-tooltips-and-popovers">Tooltips and popovers</a></li>
-</ul>
-<h2 id="basic-example">Basic example</h2>
-
-<p>Wrap a series of buttons with <code class="highlighter-rouge">.btn</code> in <code class="highlighter-rouge">.btn-group</code>.</p>
-
-<div class="bd-example" data-example-id="">
-<div class="btn-group" role="group" aria-label="Basic example">
-  <button type="button" class="btn btn-secondary">Left</button>
-  <button type="button" class="btn btn-secondary">Middle</button>
-  <button type="button" class="btn btn-secondary">Right</button>
-</div>
-</div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"Basic example"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>Left<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>Middle<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>Right<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div>
-
-<h2 id="button-toolbar">Button toolbar</h2>
-
-<p>Combine sets of button groups into button toolbars for more complex components.</p>
-
-<div class="bd-example" data-example-id="">
-<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-  <div class="btn-group" role="group" aria-label="First group">
-    <button type="button" class="btn btn-secondary">1</button>
-    <button type="button" class="btn btn-secondary">2</button>
-    <button type="button" class="btn btn-secondary">3</button>
-    <button type="button" class="btn btn-secondary">4</button>
-  </div>
-  <div class="btn-group" role="group" aria-label="Second group">
-    <button type="button" class="btn btn-secondary">5</button>
-    <button type="button" class="btn btn-secondary">6</button>
-    <button type="button" class="btn btn-secondary">7</button>
-  </div>
-  <div class="btn-group" role="group" aria-label="Third group">
-    <button type="button" class="btn btn-secondary">8</button>
-  </div>
-</div>
-</div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-toolbar"</span> <span class="na">role=</span><span class="s">"toolbar"</span> <span class="na">aria-label=</span><span class="s">"Toolbar with button groups"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"First group"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/button&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/button&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/button&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>4<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"Second group"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>5<span class="nt">&lt;/button&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>6<span class="nt">&lt;/button&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>7<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"Third group"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>8<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div>
-
-<h2 id="sizing">Sizing</h2>
-
-<p>Instead of applying button sizing classes to every button in a group, just add <code class="highlighter-rouge">.btn-group-*</code> to each <code class="highlighter-rouge">.btn-group</code>, including each one when nesting multiple groups.</p>
-
-<div class="bd-example">
-  <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
-    <button type="button" class="btn btn-secondary">Left</button>
-    <button type="button" class="btn btn-secondary">Middle</button>
-    <button type="button" class="btn btn-secondary">Right</button>
-  </div>
-  <br><div class="btn-group" role="group" aria-label="Default button group">
-    <button type="button" class="btn btn-secondary">Left</button>
-    <button type="button" class="btn btn-secondary">Middle</button>
-    <button type="button" class="btn btn-secondary">Right</button>
-  </div>
-  <br><div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
-    <button type="button" class="btn btn-secondary">Left</button>
-    <button type="button" class="btn btn-secondary">Middle</button>
-    <button type="button" class="btn btn-secondary">Right</button>
-  </div>
-</div>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group btn-group-lg"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"..."</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"..."</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group btn-group-sm"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"..."</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure><h2 id="nesting">Nesting</h2>
-
-<p>Place a <code class="highlighter-rouge">.btn-group</code> within another <code class="highlighter-rouge">.btn-group</code> when you want dropdown menus mixed with a series of buttons.</p>
-
-<div class="bd-example" data-example-id="">
-<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-  <button type="button" class="btn btn-secondary">1</button>
-  <button type="button" class="btn btn-secondary">2</button>
-
-  <div class="btn-group" role="group">
-    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Dropdown
-    </button>
-    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-      <a class="dropdown-item" href="#">Dropdown link</a>
-      <a class="dropdown-item" href="#">Dropdown link</a>
-    </div>
-  </div>
-</div>
-</div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"Button group with nested dropdown"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/button&gt;</span>
-
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span> <span class="na">role=</span><span class="s">"group"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"btnGroupDrop1"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
-      Dropdown
-    <span class="nt">&lt;/button&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">aria-labelledby=</span><span class="s">"btnGroupDrop1"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Dropdown link<span class="nt">&lt;/a&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Dropdown link<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div>
-
-<h2 id="vertical-variation">Vertical variation</h2>
-
-<p>Make a set of buttons appear vertically stacked rather than horizontally. <strong>Split button dropdowns are not supported here.</strong></p>
-
-<div class="bd-example">
-  <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
-    <button type="button" class="btn btn-secondary">Button</button>
-    <button type="button" class="btn btn-secondary">Button</button>
-    <div class="btn-group" role="group">
-      <button id="btnGroupVerticalDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Dropdown
-      </button>
-      <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop1">
-        <a class="dropdown-item" href="#">Dropdown link</a>
-        <a class="dropdown-item" href="#">Dropdown link</a>
-      </div>
-    </div>
-    <button type="button" class="btn btn-secondary">Button</button>
-    <button type="button" class="btn btn-secondary">Button</button>
-    <div class="btn-group" role="group">
-      <button id="btnGroupVerticalDrop2" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Dropdown
-      </button>
-      <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop2">
-        <a class="dropdown-item" href="#">Dropdown link</a>
-        <a class="dropdown-item" href="#">Dropdown link</a>
-      </div>
-    </div>
-    <div class="btn-group" role="group">
-      <button id="btnGroupVerticalDrop3" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Dropdown
-      </button>
-      <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop3">
-        <a class="dropdown-item" href="#">Dropdown link</a>
-        <a class="dropdown-item" href="#">Dropdown link</a>
-      </div>
-    </div>
-    <div class="btn-group" role="group">
-      <button id="btnGroupVerticalDrop4" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Dropdown
-      </button>
-      <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop4">
-        <a class="dropdown-item" href="#">Dropdown link</a>
-        <a class="dropdown-item" href="#">Dropdown link</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group-vertical"</span><span class="nt">&gt;</span>
-  ...
-<span class="nt">&lt;/div&gt;</span></code></pre></figure><h2 id="tooltips-and-popovers">Tooltips and popovers</h2>
-
-<p>Due to the specific implementation (and some other components), a bit of special casing is required for tooltips and popovers within button groups. <strong>Youâll have to specify the option <code class="highlighter-rouge">container: 'body'</code></strong> to avoid unwanted side effects (such as the element growing wider and/or losing its rounded corners when the tooltip or popover is triggered).</p>
-
-        </div><div class=bd-content>
           <h1 class="bd-title" id="content">Dropdowns</h1>
           <p>Dropdowns are toggleable, contextual overlays for displaying lists of links and more. Theyâre made interactive with the included Bootstrap dropdown JavaScript plugin. Theyâre toggled by clicking, not by hovering; this is <a href="http://markdotto.com/2012/02/27/bootstrap-explained-dropdowns/">an intentional design decision.</a></p>
 
@@ -5979,7 +6252,7 @@
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group row"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"example-email-input"</span> <span class="na">class=</span><span class="s">"col-xs-2 col-form-label"</span><span class="nt">&gt;</span>Email<span class="nt">&lt;/label&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-10"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">value=</span><span class="s">"<a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="b3d1dcdcc7c0c7c1d2c3f3d6cbd2dec3dfd69dd0dcde">[email protected]</a><script data-cfhash="f9e31" type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script>"</span> <span class="na">id=</span><span class="s">"example-email-input"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">value=</span><span class="s">"bootstrap@example.com"</span> <span class="na">id=</span><span class="s">"example-email-input"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group row"</span><span class="nt">&gt;</span>
@@ -6107,7 +6380,7 @@
   <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleInputEmail2"</span><span class="nt">&gt;</span>Email<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleInputEmail2"</span> <span class="na">placeholder=</span><span class="s">"<a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="1278737c773c767d7752776a737f627e773c717d7f">[email protected]</a><script data-cfhash="f9e31" type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script>"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleInputEmail2"</span> <span class="na">placeholder=</span><span class="s">"jane.doe@example.com"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Send invitation<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/form&gt;</span></code></pre></div>
@@ -6320,13 +6593,13 @@
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group row"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"lgFormGroupInput"</span> <span class="na">class=</span><span class="s">"col-sm-2 col-form-label col-form-label-lg"</span><span class="nt">&gt;</span>Email<span class="nt">&lt;/label&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-10"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control form-control-lg"</span> <span class="na">id=</span><span class="s">"lgFormGroupInput"</span> <span class="na">placeholder=</span><span class="s">"<a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="40392f35002538212d302c256e232f2d">[email protected]</a><script data-cfhash="f9e31" type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script>"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control form-control-lg"</span> <span class="na">id=</span><span class="s">"lgFormGroupInput"</span> <span class="na">placeholder=</span><span class="s">"you@example.com"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group row"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"smFormGroupInput"</span> <span class="na">class=</span><span class="s">"col-sm-2 col-form-label col-form-label-sm"</span><span class="nt">&gt;</span>Email<span class="nt">&lt;/label&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-10"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control form-control-sm"</span> <span class="na">id=</span><span class="s">"smFormGroupInput"</span> <span class="na">placeholder=</span><span class="s">"<a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="b4cddbc1f4d1ccd5d9c4d8d19ad7dbd9">[email protected]</a><script data-cfhash="f9e31" type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script>"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control form-control-sm"</span> <span class="na">id=</span><span class="s">"smFormGroupInput"</span> <span class="na">placeholder=</span><span class="s">"you@example.com"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/form&gt;</span>
@@ -6488,7 +6761,7 @@
   <div class="form-group row">
     <label class="col-sm-2 col-form-label">Email</label>
     <div class="col-sm-10">
-      <p class="form-control-static mb-0"><a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="37525a565e5b77524f565a475b521954585a">[email protected]</a><script data-cfhash="f9e31" type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script></p>
+      <p class="form-control-static mb-0">email@example.com</p>
     </div>
   </div>
   <div class="form-group row">
@@ -6503,7 +6776,7 @@
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group row"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"col-sm-2 col-form-label"</span><span class="nt">&gt;</span>Email<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-10"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"form-control-static mb-0"</span><span class="nt">&gt;</span><a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="147179757d7854716c75796478713a777b79">[email protected]</a><script data-cfhash="f9e31" type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script><span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"form-control-static mb-0"</span><span class="nt">&gt;</span>email@example.com<span class="nt">&lt;/p&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group row"</span><span class="nt">&gt;</span>
@@ -6518,7 +6791,7 @@
 <form class="form-inline">
   <div class="form-group">
     <label class="sr-only">Email</label>
-    <p class="form-control-static"><a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="d4b1b9b5bdb894b1acb5b9a4b8b1fab7bbb9">[email protected]</a><script data-cfhash="f9e31" type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script></p>
+    <p class="form-control-static">email@example.com</p>
   </div>
   <div class="form-group">
     <label for="inputPassword2" class="sr-only">Password</label>
@@ -6530,7 +6803,7 @@
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-inline"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Email<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"form-control-static"</span><span class="nt">&gt;</span><a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="d1b4bcb0b8bd91b4a9b0bca1bdb4ffb2bebc">[email protected]</a><script data-cfhash="f9e31" type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script><span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"form-control-static"</span><span class="nt">&gt;</span>email@example.com<span class="nt">&lt;/p&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputPassword2"</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
@@ -8912,20 +9185,20 @@
 <div class="bd-example" data-example-id="">
 <!-- Just an image -->
 <nav class="navbar navbar-light bg-faded"><a class="navbar-brand" href="#">
-    <img src="/assets/brand/bootstrap-solid.svg" width="30" height="30" alt=""></a>
+    <img src="" width="30" height="30" alt=""></a>
 </nav>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Just an image --&gt;</span>
 <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-light bg-faded"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/assets/brand/bootstrap-solid.svg"</span> <span class="na">width=</span><span class="s">"30"</span> <span class="na">height=</span><span class="s">"30"</span> <span class="na">alt=</span><span class="s">""</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">""</span> <span class="na">width=</span><span class="s">"30"</span> <span class="na">height=</span><span class="s">"30"</span> <span class="na">alt=</span><span class="s">""</span><span class="nt">&gt;</span>
   <span class="nt">&lt;/a&gt;</span>
 <span class="nt">&lt;/nav&gt;</span></code></pre></div>
 
 <div class="bd-example" data-example-id="">
 <!-- Image and text -->
 <nav class="navbar navbar-light bg-faded"><a class="navbar-brand" href="#">
-    <img src="/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+    <img src="" width="30" height="30" class="d-inline-block align-top" alt="">
     Bootstrap
   </a>
 </nav>
@@ -8933,7 +9206,7 @@
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Image and text --&gt;</span>
 <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-light bg-faded"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/assets/brand/bootstrap-solid.svg"</span> <span class="na">width=</span><span class="s">"30"</span> <span class="na">height=</span><span class="s">"30"</span> <span class="na">class=</span><span class="s">"d-inline-block align-top"</span> <span class="na">alt=</span><span class="s">""</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">""</span> <span class="na">width=</span><span class="s">"30"</span> <span class="na">height=</span><span class="s">"30"</span> <span class="na">class=</span><span class="s">"d-inline-block align-top"</span> <span class="na">alt=</span><span class="s">""</span><span class="nt">&gt;</span>
     Bootstrap
   <span class="nt">&lt;/a&gt;</span>
 <span class="nt">&lt;/nav&gt;</span></code></pre></div>

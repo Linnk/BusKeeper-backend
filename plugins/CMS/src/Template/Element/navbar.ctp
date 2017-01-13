@@ -28,7 +28,7 @@
 		<ul class="nav navbar-nav pull-xs-left">
 			<li class="nav-item">
 				<?php
-					$navbar_logo = $this->Html->image($settings['navbar_brand_logo'], ['height'=>'32','style' => "-webkit-filter:brightness(200); filter:brightness(200); "]);
+					$navbar_logo = $this->Html->image($this->Settings->get('navbar_brand_logo'), ['height'=>'32','style' => "-webkit-filter:brightness(200); filter:brightness(200); "]);
 					echo $this->Html->link($navbar_logo, "/", [
 						'class' => 'navbar-brand',
 						'escape' => false
@@ -63,7 +63,7 @@
 					<?php endif; ?>
 			<?php endforeach; ?>
 		</ul>
-		<ul class="nav navbar-nav pull-xs-right">
+		<ul class="nav navbar-nav float-xs-right">
 			<li class="nav-item dropdown">
 				<a class="nav-link" href="#"><?php msg($Role['Admin']['name'], false) ?></a>
 				<div class="dropdown-menu dropdown-menu-right">
@@ -74,7 +74,7 @@
 			</li>
 		</ul>
 	<?php else: ?>
-		<ul class="nav navbar-nav pull-xs-right">
+		<ul class="nav navbar-nav float-xs-right">
 			<li class="nav-item">
 				<a class="nav-link" href="/login"><?php msg("Login") ?></a>
 			</li>

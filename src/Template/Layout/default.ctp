@@ -14,6 +14,7 @@
  */
  
 use Cake\Routing\Router;
+use Cake\Core\Configure;
 
 $website_title = h($this->Settings->get('website_name', $this->name));
 $website_description = h($this->Settings->get('website_description', $website_title));
@@ -34,30 +35,35 @@ $website_favicon = Router::url($this->Settings->get('website_favicon', 'favicon.
 		echo $this->Html->meta('description', $website_description);
 		echo $this->Html->meta('keywords', $website_keywords);
 		
-		echo $this->Settings->get('website_share_image') ? $this->element('metas',[
-			'metas' => [
+		if($this->Settings->get('website_share_image')):
+			echo $this->Content->metas([
 				'title' => $website_title,
 				'description' => $website_description,
-				'url' => Router::url($this->request->here, true),
+				'keywords' => $website_keywords,
 				'image' => Router::url($this->Settings->get('website_share_image'), true),
-				'icon' => Router::url($this->Settings->get('website_share_image'), true)
-			]
-		]) : $this->element('metas',[
-			'metas' => [
+				'icon' => Router::url($this->Settings->get('website_share_image'), true),
+				'url' => Router::url($this->request->here, true)
+			], $this->request->header('User-Agent'));
+		else:
+			echo $this->Content->metas([
 				'title' => $website_title,
 				'description' => $website_description,
+				'keywords' => $website_keywords,
 				'url' => Router::url($this->request->here, true)
-			]
-		]);
+			], $this->request->header('User-Agent'));
+		endif;
 		
-		echo $this->Html->css('bootstrap.min.css');
-		echo $this->Html->css('font-awesome.min.css');
-		echo $this->Html->css('fonts.css');
-		echo $this->Html->css('navbar.css');
-		echo $this->Html->css('styles.css');
+		$suffix = Configure::read('debug') ? "?id=".rand(1,1000):"";
+		
+		echo $this->Html->css('bootstrap.min.css'.$suffix);
+		echo $this->Html->css('font-awesome.min.css'.$suffix);
+		echo $this->Html->css('fonts.css'.$suffix);
+		echo $this->Html->css('navbar.css'.$suffix);
+		echo $this->Html->css('styles.css'.$suffix);
+		echo $this->Html->css('pages.css'.$suffix);
     
-		echo $this->Html->script('mootools.min.js');
-		echo $this->Html->script('navbar.js');
+		echo $this->Html->script('mootools.min.js'.$suffix);
+		echo $this->Html->script('navbar.js'.$suffix);
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -65,8 +71,8 @@ $website_favicon = Router::url($this->Settings->get('website_favicon', 'favicon.
 	?>
 </head>
 <body>
-    <?php echo $this->element('navbar') ?>
-    <div id="content" class="container clearfix">
+    <?php //echo $this->element('navbar') ?>
+    <div id="content">
 	    <?php echo $this->Flash->render() ?>
 		<?php echo $this->Flash->render('auth_user') ?>
         <?php echo $this->fetch('content') ?>

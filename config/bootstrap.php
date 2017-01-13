@@ -220,3 +220,4 @@ Type::build('datetime')->useImmutable();
 include "functions.php";
 
 Plugin::load('CMS', ['bootstrap' => false, 'routes' => true]);
+Plugin::load('Api', ['bootstrap' => false, 'routes' => true]);

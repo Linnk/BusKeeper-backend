@@ -43,7 +43,7 @@ class AppView extends View
 		    'keyField' => 'name',
 		    'valueField' => 'value'
 		])->toArray();
-		$this->set('settings',$settings);
+		$this->Settings->set($settings);
     }
 	public function isRequest($controller=null, $action=null, $pass=null) {
 		if($controller===null && $action===null && $pass===null) {
