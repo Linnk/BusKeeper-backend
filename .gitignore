@@ -5,11 +5,11 @@ api/old/Config/core.php
 api/old/Config/email.php
 api/old/webroot/files/
 
-api/tmp/
-api/Config/database.php
-api/Config/core.php
-api/Config/email.php
-api/webroot/files/
+api/app/tmp/
+api/app/Config/database.php
+api/app/Config/core.php
+api/app/Config/email.php
+api/app/webroot/files/
 
 api/lib/Cake/Console/Templates/skel/tmp/cache/persistent/myapp_cake_core_cake_console_
 error_log

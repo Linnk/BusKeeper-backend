@@ -1,0 +1,43 @@
+{
+    "Dashboard": {
+        "controller": "Dashboard",
+        "actions": {
+            "index": {
+                "label": "Dashboard",
+                "navbar": 1
+            },
+            "*": []
+        }
+    },
+    "Users": {
+        "controller": "Users",
+        "actions": {
+            "index": {
+                "label": "Users",
+                "navbar": 1,
+                "dropdown": "Users"
+            },
+            "*": []
+        }
+    },
+    "Users Types": {
+        "controller": "UsersTypes",
+        "actions": {
+            "index": {
+                "label": "Users Types",
+                "navbar": 1,
+                "dropdown": "Users"
+            },
+            "*": []
+        }
+    },
+    "Settings": {
+        "controller": "Settings",
+        "actions": {
+            "index": {
+                "label": "Settings"
+            },
+            "*": []
+        }
+    }
+}

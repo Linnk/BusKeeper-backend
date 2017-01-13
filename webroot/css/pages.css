@@ -1,0 +1,35 @@
+.hero-background {
+	position: relative;
+	padding: 15px 0;
+}
+.hero-background > * {
+	position: relative;
+	z-index: 2;
+}
+.hero-background > .background {
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	opacity: 0.85;
+	background: #86D7FD url() center center no-repeat;	
+	background-size: cover;
+	background-blend-mode: multiply;
+	z-index: 1;
+}
+.btn > .fa {
+	transform: scale(1.8);
+	transform-origin: center center;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+.btn > .fa:first-child {
+	transform-origin: center right;
+}
+.btn > .fa:last-child {
+	transform-origin: center right;
+}
+.btn > .fa:only-child {
+	transform-origin: center center;
+}
+.step .img {
+	margin: 2rem 0 1.5rem;
+}
