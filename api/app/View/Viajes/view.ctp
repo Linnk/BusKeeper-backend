@@ -23,10 +23,6 @@ App::uses('CakeTime', 'Utility');
 </thead>
 <tbody>
 	<tr>
-		<td class="data-table">UDID</td>
-		<td><small><?php echo $viaje['Viaje']['udid'] ?></small></td>
-	</tr>
-	<tr>
 		<td class="data-table">Ruta</td>
 		<td><span class="label label-info"><?php echo $viaje['Viaje']['ruta'] ?></span></td>
 	</tr>
@@ -63,7 +59,7 @@ App::uses('CakeTime', 'Utility');
 		<td><?php echo $viaje['Viaje']['total_stops'] ?></td>
 	</tr>
 	<tr>
-		<td class="data-table">Escesos de velocidad<br />(+50 km/h)</td>
+		<td class="data-table">Exceso de velocidad<br />(+50 km/h)</td>
 		<td><?php echo $this->Format->overspeeding($viaje['Viaje']['overspeeding']) ?></td>
 	</tr>
 	<tr>

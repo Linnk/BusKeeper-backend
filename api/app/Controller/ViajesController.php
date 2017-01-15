@@ -9,7 +9,10 @@ class ViajesController extends AppController
 	);
 	public function index()
 	{
-		$viajes = $this->paginate('Viaje');
+		$viajes = $this->paginate('Viaje', array(
+			'total_time >' => 60,
+			'total_distance >' => 100
+		));
 		
 		$this->set('viajes', $viajes);
 	}

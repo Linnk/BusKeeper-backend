@@ -1,5 +1,6 @@
 <?php
 	use Cake\Datasource\ConnectionManager;
+	use Cake\Utility\Inflector;
 	
 	$connection = ConnectionManager::get('api');
 	$results = $connection->execute('
@@ -22,6 +23,7 @@
 	$max = 0;
 	foreach($results as $key => $result) {
 		$rutas[$key] = [
+			'id_ruta' => Inflector::slug($result['ruta']),
 			'ruta' => $result['ruta'],
 			'average_speed' => $result['MAX(average_speed)'],
 			'overspeedings' => $result['SUM(overspeeding)'],
@@ -42,13 +44,21 @@
 	<div class="container text-xs-center">			
 		<h1 class="mt-3"><img src="<?php echo $this->Settings->get('website_front_logo') ?>"></h1>
 		<hr class="my-3 py-3 transparent">
-		<div>
-			<p class="emphasis"><span>Registra</span> <span>Evalúa</span> <span>Comparte</span></p>
-			<p>La calidad del transporte público de tu ciudad.</p>
-		</div>
-		<hr class="my-3 transparent">
-		<p class="h4 my-3">Descargar para</p>
 		<div class="mid-container" style="width: 400px;">
+			<div class="row">					
+				<div class="col-sm-4">
+					<p class="emphasis"><span>Registra</span></p>
+				</div>					
+				<div class="col-sm-4">
+					<p class="emphasis"><span>Evalúa</span></p>
+				</div>					
+				<div class="col-sm-4">
+					<p class="emphasis"><span>Comparte</span></p>
+				</div>
+			</div>
+			<p>La calidad del transporte público de tu ciudad.</p>
+			<hr class="my-3 transparent">
+			<p class="h4 my-3">Descargar para</p>
 			<div class="row">					
 				<div class="col-xs-6">
 					<a class="btn btn-block btn-outline-secondary" href="https://itunes.apple.com/mx/app/buskeeper-evalua-transporte/id691109375?mt=8" target="_blank"><i class="fa fa-apple" aria-hidden="true"></i> <span>iOS</span></a>
@@ -107,8 +117,84 @@
 						Excesos de velocidad
 					</div>
 					<div class="progress progress-custom">
-						<div class="bar" style="width: <?php echo ($ruta['overspeedings']/$max)*100 ?>%;"></div>
+						<div class="bar" style="width: <?php echo ($ruta['overspeedings']/$max)* 100 ?>%;"></div>
 						<div class="value"><?php echo $ruta['overspeedings'] ?></div>
+						<div class="detail" data-toggle="collapse" data-target="#ratings-<?php echo $ruta['id_ruta'] ?>" aria-expanded="false"><span class="close-toggle"><i class="fa fa-times"></i></span><span class="open-toggle"><i class="fa fa-ellipsis-h"></i></span></div>
+					</div>
+					<div class="ratings collapse" id="ratings-<?php echo $ruta['id_ruta'] ?>">						
+						<div class="leaderboard th text-xs-left">
+							Valoraciones de usuarios
+						</div>
+						<dl class="row">
+							<dt class="col-sm-6">Seguridad</dt>
+							<dd class="col-sm-6">
+								<?php $i=1; while($i <= 5): ?>
+									<?php if($ruta['rate_seguridad'] >= $i): ?>
+										<i class="fa fa-star"></i>
+									<?php elseif($ruta['rate_seguridad']+0.5 >= $i): ?>
+										<i class="fa fa-star-half-o"></i>
+									<?php else: ?>
+										<i class="fa fa-star-o"></i>
+									<?php endif; ?>
+								<?php $i++; endwhile; ?>
+							</dd>
+						</dl>
+						<dl class="row">
+							<dt class="col-sm-6">Higiene</dt>
+							<dd class="col-sm-6">
+								<?php $i=1; while($i <= 5): ?>
+									<?php if($ruta['rate_higiene'] >= $i): ?>
+										<i class="fa fa-star"></i>
+									<?php elseif($ruta['rate_higiene']+0.5 >= $i): ?>
+										<i class="fa fa-star-half-o"></i>
+									<?php else: ?>
+										<i class="fa fa-star-o"></i>
+									<?php endif; ?>
+								<?php $i++; endwhile; ?>
+							</dd>
+						</dl>
+						<dl class="row">
+							<dt class="col-sm-6">Puntualidad</dt>
+							<dd class="col-sm-6">
+								<?php $i=1; while($i <= 5): ?>
+									<?php if($ruta['rate_puntualidad'] >= $i): ?>
+										<i class="fa fa-star"></i>
+									<?php elseif($ruta['rate_puntualidad']+0.5 >= $i): ?>
+										<i class="fa fa-star-half-o"></i>
+									<?php else: ?>
+										<i class="fa fa-star-o"></i>
+									<?php endif; ?>
+								<?php $i++; endwhile; ?>
+							</dd>
+						</dl>
+						<dl class="row">
+							<dt class="col-sm-6">Chofer</dt>
+							<dd class="col-sm-6">
+								<?php $i=1; while($i <= 5): ?>
+									<?php if($ruta['rate_chofer'] >= $i): ?>
+										<i class="fa fa-star"></i>
+									<?php elseif($ruta['rate_chofer']+0.5 >= $i): ?>
+										<i class="fa fa-star-half-o"></i>
+									<?php else: ?>
+										<i class="fa fa-star-o"></i>
+									<?php endif; ?>
+								<?php $i++; endwhile; ?>
+							</dd>
+						</dl>
+						<dl class="row">
+							<dt class="col-sm-6">Comodidad</dt>
+							<dd class="col-sm-6">
+								<?php $i=1; while($i <= 5): ?>
+									<?php if($ruta['rate_comodidad'] >= $i): ?>
+										<i class="fa fa-star"></i>
+									<?php elseif($ruta['rate_comodidad']+0.5 >= $i): ?>
+										<i class="fa fa-star-half-o"></i>
+									<?php else: ?>
+										<i class="fa fa-star-o"></i>
+									<?php endif; ?>
+								<?php $i++; endwhile; ?>
+							</dd>
+						</dl>
 					</div>
 				</div>
 			</div>
@@ -184,7 +270,8 @@
 		<h1 class="my-3"><img src="<?php echo $this->Settings->get('website_blue_logo') ?>"></h1>
 		<p class="h3 text-info">Exijamos un mejor servicio de transporte público :D</p>
 		<div class="mid-container" style="width: 400px;">
-			<p class="text-primary my-3 h3">Descargar para</p>
+			<img class="my-2" src="/img/bus.png">
+			<p class="text-primary mt-2 mb-3 h3">Descargar para</p>
 			<div class="row">					
 				<div class="col-xs-6">
 					<a class="btn btn-block btn-outline-primary" href="https://itunes.apple.com/mx/app/buskeeper-evalua-transporte/id691109375?mt=8" target="_blank"><i class="fa fa-apple" aria-hidden="true"></i> <span>iOS</span></a>

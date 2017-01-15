@@ -1,4 +1,5 @@
 <footer class="bg-gray">
+<?php /*
 	<div class="container">
 		<div class="row text-xs-center">
 			<div class="col-sm-4">
@@ -12,6 +13,7 @@
 			</div>
 		</div>
 	</div>
+*/ ?>
 	<div class="text-xs-center">
 		<div class="container pt-1 pb-2">
 			<p>© BusKeeper - <small>Creador por: <a href="http://twitter.com/Linnk" target="_blank" title="Ignacio Benavides">@Linnk</a>, <a href="http://twitter.com/Bogue89" target="_blank" title="Jorge Benavides">@Bogue89</a> y <a href="http://twitter.com/CarlosImarch" target="_blank" title="Carlos Imarch">@CarlosImarch</a></small></p>

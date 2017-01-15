@@ -124,14 +124,42 @@ small,
 	overflow: hidden;
 }
 .progress-custom .bar {
-	content: '';
 	background: linear-gradient(141deg, #42C1FC 0%, #0496FF 91%);
 	display: block;
 	position: absolute;
 	border-radius: 3rem;
 	top: 0; left: 0; bottom: 0;
 }
+.progress-custom .detail {
+	background: #35414A;
+	cursor: pointer;
+	display: block;
+	position: absolute;
+	border-radius: 3rem;
+	box-shadow: 0 1px 4px 0 rgba(0,0,0,0.5);
+	padding: 0 4px;
+	top: 2px; right: 2px; bottom: 2px;
+}
+.progress-custom .detail .close-toggle {
+	display: block;
+	margin-top: -2px;
+}
+.progress-custom .detail .open-toggle {
+	display: block;
+	margin-top: -1px;
+}
+.progress-custom .detail[aria-expanded=false] .close-toggle {
+	display: none;
+}
+.progress-custom .detail[aria-expanded=true] .open-toggle {
+	display: none;
+}
 .progress-custom .value {
 	position: relative;
 	display: block;
+}
+.ratings dt,
+.ratings dd {
+	font-size: 12px;
+	font-weight: 500;
 }

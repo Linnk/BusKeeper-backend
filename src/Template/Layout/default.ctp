@@ -62,13 +62,26 @@ $website_favicon = Router::url($this->Settings->get('website_favicon', 'favicon.
 		echo $this->Html->css('styles.css'.$suffix);
 		echo $this->Html->css('pages.css'.$suffix);
     
-		echo $this->Html->script('mootools.min.js'.$suffix);
-		echo $this->Html->script('navbar.js'.$suffix);
+		echo $this->Html->script('jquery.min.js'.$suffix);
+		echo $this->Html->script('tether.min.js'.$suffix);
+		echo $this->Html->script('bootstrap.min.js'.$suffix);
+		echo $this->Html->script('ratings.js'.$suffix);
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
 	?>
+	
+	<meta property="twitter:card" name="twitter:card" value="summary">
+	<meta property="twitter:title" name="twitter:title" content="BusKeeper - Registra y evalúa la calidad del transporte público."/>
+	<meta property="twitter:description" name="twitter:description" content="Monitorea la calidad del transporte público de tu ciudad. Comparte los resultados con tus amigos."/>
+	<meta property="twitter:image" name="twitter:image" content="http://buskeeper.com/files/settings/GPXHENQZN.jpg"/>
+	
+	<meta property="og:url" name="og:url" content="http://buskeeper.com/"/>
+	<meta property="og:type" name="og:type" content="website"/>
+	<meta property="og:title" name="og:title" content="BusKeeper - Registra y evalúa la calidad del transporte público."/>
+	<meta property="og:description" name="og:description" content="Monitorea la calidad del transporte público de tu ciudad. Comparte los resultados con tus amigos."/>
+	<meta property="og:image" name="og:image" content="http://buskeeper.com/files/settings/GPXHENQZN.jpg"/>
 </head>
 <body>
     <?php //echo $this->element('navbar') ?>
